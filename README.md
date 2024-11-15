@@ -5,7 +5,7 @@
   
   $x = \sqrt{- n} \notin R$<br>
   $->$<br>
-  $x = \sqrt{- n} = i\sqrt{n} \in C$
+  $x = \sqrt{- n} = i\sqrt{n} = Im(\sqrt{n}) \in C$
 
   where $n > 0 \in R$.<br>
   Since this calculation doesn't follow $R$ field rules, another field is necessary to operate on these numbers, and guess what it's the complex field $C$. Now to avoid writing a book about fields math concepts: a field is a set of numbers, where an identity element exists, where every element (number) of the field has an inverse, and where two operations exist $(+, \times)$ and have some properties. We don't care about every single property of a field, what I want to say now is that the basic operations in $C$ behave differently compared to $R$. The interesting fact is that the equation above alone builds an entire field around itself.<br>
@@ -33,7 +33,7 @@
 
   $(x_{?}, y_{?})$
 
-  We can notice that this representation is the same as $x_{?} + y_{?}$, indeed this form is called "algebraic". Now since (as already mentioned) $C$ field shares $x-axis$ with $R$, infact $C$ is an **extension** of $R$ (as shown above into the Euler-Venn graph), we can represent complex numbers as sitting on an orthogonal $R$ plane (see the link above and play around, this is why I told you that it could be useful to visualize it). This reasoning is to "justify" the presence of a "real" part in the $C$ field. To better understand this fact, these are the $2D$ (Re, and Im) **and** $3D$ representation of $y = \sqrt{x}$ function:
+  We can notice that this representation is the same as $x_{?} + y_{?}$, indeed this form is called "algebraic". Now since (as already mentioned) $C$ field shares $x-axis$ with $R$, infact $C$ is an **extension** of $R$ (as shown above into the Euler-Venn graph), we can represent complex numbers as sitting on an orthogonal to $R$ plane (see the link above and play around, this is why I told you that it could be useful to visualize it). This reasoning is to "justify" the presence of a "real" part in the $C$ field. To better understand this fact, these are the 2D (Re, and Im) **and** 3D representation of $y = \sqrt{x}$ function:
 
   ![sqrtRe](sqrtRe.png)
 
@@ -47,8 +47,28 @@
 
   ![sqrt3D](sqrt3D.png)
 
+  Now, since we know why the $x-axis$ is shared between $R$ and $C$, and we can represent any number in an "algebraic" form:
+
+  $z = (x, y) = x + y$ with $z, x, y \in R$ is the representation of any number on the $R-plane$ part of the cartesian graph.<br>
+  $->$<br>
+  $z = (x, Im(y)) = x + Im(y)$ with $z, x, y \in C$ is the representation of any number on the $C-plane$ part of the cartesian graph.<br>
+
+  Now we can finally see the multiplication:
+
+  $z_{1} = (x_{1}, Im(y_{1})) = x_{1} + Im(y_{1}) = x_{1} + iy_{1}$<br>
+  $z_{2} = (x_{2}, Im(y_{2})) = x_{2} + Im(y_{2}) = x_{2} + iy_{2}$<br>
+  $(x_{1}, Im(y_{1})) \cdot (x_{2}, Im(y_{2})) = (x_{1} + iy_{1})(x_{2} + iy_{2}) = x_{1}x_{2} + x_{1}iy_{2} + iy_{1}x_{2} + (- 1)y_{1}y_{2} = x_{1}x_{2} - y_{1}y_{2} + i(x_{1}y_{2} + y_{1}x_{2})$
+  $(x_{1}, Im(y_{1})) \cdot (x_{2}, Im(y_{2})) = (x_{1}x_{2} - y_{1}y_{2}, x_{1}y_{2} + y_{1}x_{2})$
+
+  
+  
+  <br>
+
   
 
+  
+
+  
 
   
 </p>
