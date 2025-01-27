@@ -16,10 +16,9 @@
 
 </p>
 
-## Multiplication on $C$
+## Representation and multiplication of numbers in $C$
 
 <p>
-  To further clarify what I said in the previous section, it's useful to directly see what multiplication produces in $C$.<br>
   Since
 
   $n > 0, \sqrt{- n} = i\sqrt{n}$<br>
@@ -30,7 +29,7 @@
 
   $i^{2} = i \cdot i = - 1$
 
-  Now before delving the multiplication; when we deal with the cartesian graph, every point mapped on it can be represented using this form:
+  When we deal with the cartesian graph, every point mapped on it can be represented using this form:
 
   $(x_{?}, y_{?})$
 
@@ -54,9 +53,16 @@
   
   is the representation of any number on the $R-plane$ part of the cartesian graph, while
   
-  $z = (x, Im(y)) = x + Im(y)$ with $z, y \in C, x \in R$ 
+  $z = (x, Im(y)) = x + Im(y)$ with $z, Im(y) \in C, x, y \in R$ 
   
   is the representation of any number on the $C-plane$ part of the cartesian graph.
+
+  Now we can further observe a couple of complex numbers graphical representation in a clearer representation of the $C$ plane.
+
+  $z_1 = 1 + Im(1)$<br>
+  $z_2 = - 3 - Im(2)$
+
+  ![CP](./CP.png)
 
   Now we can finally see the multiplication.
 
@@ -64,19 +70,61 @@
   $z_{2} = (x_{2}, Im(y_{2})) = x_{2} + Im(y_{2}) = x_{2} + iy_{2}$
   
   $(x_{1}, Im(y_{1})) \cdot (x_{2}, Im(y_{2})) = (x_{1} + iy_{1})(x_{2} + iy_{2}) = x_{1}x_{2} + x_{1}iy_{2} + iy_{1}x_{2} + (- 1)y_{1}y_{2} = x_{1}x_{2} - y_{1}y_{2} + i(x_{1}y_{2} + y_{1}x_{2}) = (x_{1}x_{2} - y_{1}y_{2}, x_{1}y_{2} + y_{1}x_{2})$
-
-  
-  
-  <br>
-
-  
-
-  
-
-  
-
-  
+ 
 </p>
+
+## Tigonometric shape of complex numbers
+
+<p>
+  Some basic knowledge of trigonometry enables us to represent complex numbers in a quite intuitive form which only involves the length of $z$ segment, and the $\sin$ and $\cos$ functions, which in turn is the exact same of the "algebraic" form.
+
+  If you don't remember radians values for angles, I give you a quick remainder which basically just relies on the proof of $\pi$ (which I'm not going to cover). The circumference of a circle of radius $r = 1$ is given by
+
+  $C = 2 \pi r$
+
+  (because $\pi = C / 2r$).
+
+  This means that we can represent the round angle ($360°$) $\theta$ as $(r = 1)$
+
+  $\theta = 2\pi$
+
+  and every other angle follows, then if
+  
+  $\theta = 180°$<br>
+  $->$<br>
+  $\theta = \pi$
+
+  $-----$
+
+  $\theta = 90°$<br>
+  $->$<br>
+  $\displaystyle \theta = \frac{\pi}{2}$
+
+  and so on. We can safely set $r = 1$ as angles are not affected by the length of the radius, indeed it's clear that radians are the true representation of angles.
+
+  Now, back to our complex numbers, since
+
+  $z = x + Im(y) = x + iy$
+  
+  we can define $z \in C$ as
+
+  $z = \sqrt{x^{2} + y^{2}}\cos(\theta) + \sqrt{x^{2} + y^{2}}i\sin(\theta)$
+
+  where $\theta$ is the angle in the middle of the $z$ segment and the $x-axis$, and $\sqrt{x^{2} + y^{2}}$ is basically the formula derived by the Pitagorean Theorem for which you can find an intuitive graphical proof at [https://it.wikipedia.org/wiki/Teorema_di_Pitagora] (just watch the images). Now, calling
+
+  $|z| = \sqrt{x^{2} + y^{2}}$<br>
+  $->$<br>
+  $z = |z|\cos(\theta) + |z|i\sin(\theta)$<br>
+  $->$<br>
+  $z = |z|(\cos(\theta) + i\sin(\theta))$
+
+  we basically derived our trigonometric form for any complex number $z$, for which you can find a graphical representation below.
+
+  ![CP2](./CP2.png)
+
+</p>
+
+## From Newton $e$ constant discovery to
 
 
 
