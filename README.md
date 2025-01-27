@@ -78,7 +78,7 @@
 <p>
   Some basic knowledge of trigonometry enables us to represent complex numbers in a quite intuitive form which only involves the length of $z$ segment, and the $\sin$ and $\cos$ functions, which in turn is the exact same of the "algebraic" form.
 
-  If you don't remember radians values for angles, I give you a quick remainder which basically just relies on the proof of $\pi$ (which I'm not going to cover). The circumference of a circle of radius $r = 1$ is given by
+  If you don't remember radians values for angles I give you a quick remainder. The circumference of a circle of radius $r = 1$ is given by
 
   $C = 2 \pi r$
 
@@ -110,7 +110,7 @@
 
   $z = \sqrt{x^{2} + y^{2}}\cos(\theta) + \sqrt{x^{2} + y^{2}}i\sin(\theta)$
 
-  where $\theta$ is the angle in the middle of the $z$ segment and the $x-axis$, and $\sqrt{x^{2} + y^{2}}$ is basically the formula derived by the Pitagorean Theorem for which you can find an intuitive graphical proof at [https://it.wikipedia.org/wiki/Teorema_di_Pitagora] (just watch the images). Now, calling
+  where $\theta$ is the angle in the middle of the $z$ segment and the $x-axis$, and $\sqrt{x^{2} + y^{2}}$ is basically the formula derived by the Pitagorean Theorem which calculates the hypothenuse of a triangle, which in our case is exactly the $z$ segment, and for which you can find an intuitive graphical proof at [https://it.wikipedia.org/wiki/Teorema_di_Pitagora] (just watch the images). Now, calling
 
   $|z| = \sqrt{x^{2} + y^{2}}$<br>
   $->$<br>
