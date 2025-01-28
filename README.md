@@ -73,6 +73,16 @@
  
 </p>
 
+## Complex divison using algebraic form
+
+<p>
+  
+  We can make a little trick to avoid $i$ in the denominator and have a more readable general form for divison.
+
+  $\displaystyle \frac{z_1}{z_2} = \frac{x_1 + iy_1}{x_2 + iy_2} = \frac{x_1 + iy_1}{x_2 + iy_2} \cdot \frac{x_2 - iy_2}{x_2 - iy_2} = \frac{(x_1 + iy_1)(x_2 - iy_2)}{x_2^2 + y_2^2} = \frac{x_1x_2 + y_1y_2 + i(x_2y_1 - x_1y_2)}{x_2^2 + y_2^2} = \frac{x_1x_2 + y_1y_2}{x_2^2 + y_2^2} + i\frac{x_2y_1 - x_1y_2}{x_2^2 + y_2^2}$
+  
+</p>
+
 ## Tigonometric shape of complex numbers
 
 <p>
@@ -122,6 +132,67 @@
 
   ![CP2](./CP2.png)
 
+  Since angles repeat themselves with a period of $k(2\pi), k \in Z$ we have that
+
+  $z_1 = z_2$
+
+  iff
+
+  $|z_1| = |z_2|$<br>
+  $and$<br>
+  $\theta_1 = \theta_2 + k(2\pi), k \in Z$
+
+</p>
+
+## Trigonometric multiplication
+
+<p>
+  $z_1z_2 = |z_1|(\cos(\theta_1) + i\sin(\theta_1))|z_2|(\cos(\theta_2) + i\sin(\theta_2))$<br>
+  $=$<br>
+  $|z_1||z_2|(\cos(\theta_1)\cos(\theta_2) + i\cos(\theta_1)\sin(\theta_2) + i\sin(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2))$<br>
+  $=$<br>
+  $|z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) + i(\cos(\theta_1)\sin(\theta_2) + \sin(\theta_1)\cos(\theta_2)))$<br>
+
+  Now we need to make a little deviation into trigonometry in order to further simplify this last equation.
+
+## $\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) = $
+
+Consider the following picture.
+
+![TR](./TR.png)
+
+We have
+
+$A\hat{O}C = \alpha$<br>
+$A\hat{O}D = \beta$<br>
+$C\hat{O}D = \alpha - \beta$
+
+and
+
+$A = (1, 0)$<br>
+$B = (\cos(\alpha - \beta), \sin(\alpha - \beta))$<br>
+$C = (\cos(\alpha), \sin(\alpha))$<br>
+$D = (\cos(\beta), \sin(\beta))$
+
+Since
+
+$A\hat{O}B = C\hat{O}D = \alpha - \beta$<br>
+$->$<br>
+$\overline{AB} = \overline{CD}$
+
+and
+
+$\overline{AB} = \sqrt{(\cos(\alpha - \beta) - 1)^{2} + (\sin(\alpha - \beta) - 0)^{2}}$<br>
+$\overline{CD} = \sqrt{(\cos(\alpha) - \cos(\beta))^{2} + (\sin(\alpha) - \sin(\beta))^{2}}$
+
+where the last two formulas are just the basic formula to compute the distance between two points in the cartesian graph (note that the order of minuend and subtrahend doesn't matter since the difference is squared). Now since $\overline{AB} = \overline{CD}$
+
+$\sqrt{(\cos(\alpha - \beta) - 1)^{2} + (\sin(\alpha - \beta) - 0)^{2}} = \sqrt{(\cos(\alpha) - \cos(\beta))^{2} + (\sin(\alpha) - \sin(\beta))^{2}}$<br>
+$->$<br>
+$(\cos(\alpha - \beta) - 1)^{2} + (\sin(\alpha - \beta) - 0)^{2} = (\cos(\alpha) - \cos(\beta))^{2} + (\sin(\alpha) - \sin(\beta))^{2}$<br>
+$->$<br>
+$
+  
 </p>
 
 ## From Newton $e$ constant discovery to
