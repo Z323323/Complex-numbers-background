@@ -120,7 +120,7 @@
 
   $z = \sqrt{x^{2} + y^{2}}\cos(\theta) + \sqrt{x^{2} + y^{2}}i\sin(\theta)$
 
-  where $\theta$ is the angle in the middle of the $z$ segment and the $x-axis$, and $\sqrt{x^{2} + y^{2}}$ is basically the formula derived by the Pitagorean Theorem which calculates the hypothenuse of a triangle, which in our case is exactly the $z$ segment, and for which you can find an intuitive graphical proof at [https://it.wikipedia.org/wiki/Teorema_di_Pitagora] (just watch the images). Now, calling
+  where $\theta$ is the angle in the middle of the $z$ segment and the $x-axis$, and $\sqrt{x^{2} + y^{2}}$ is basically the formula derived by the Pythagorean Theorem which calculates the hypothenuse of a triangle, which in our case is exactly the $z$ segment, and for which you can find an intuitive graphical proof at [https://it.wikipedia.org/wiki/Teorema_di_Pitagora] (just watch the images). Now, calling
 
   $|z| = \sqrt{x^{2} + y^{2}}$<br>
   $->$<br>
@@ -153,9 +153,11 @@
   $=$<br>
   $|z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) + i(\cos(\theta_1)\sin(\theta_2) + \sin(\theta_1)\cos(\theta_2)))$<br>
 
-  Now we need to make a little deviation into trigonometry in order to further simplify this last equation.
+  Now we need to make a deviation into trigonometry in order to further simplify this last equation.
 
-## $\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) = $
+  $-----$
+
+### $\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) = $
 
 Consider the following picture.
 
@@ -191,8 +193,56 @@ $\sqrt{(\cos(\alpha - \beta) - 1)^{2} + (\sin(\alpha - \beta) - 0)^{2}} = \sqrt{
 $->$<br>
 $(\cos(\alpha - \beta) - 1)^{2} + (\sin(\alpha - \beta) - 0)^{2} = (\cos(\alpha) - \cos(\beta))^{2} + (\sin(\alpha) - \sin(\beta))^{2}$<br>
 $->$<br>
-$
-  
+$\cos^{2}(\alpha - \beta) - 2\cos(\alpha - \beta) + 1 + \sin^{2}(\alpha - \beta) = \cos^{2}(\alpha) - 2\cos(\alpha)\cos(\beta) + \cos^{2}(\beta) + \sin^{2}(\alpha) - 2\sin(\alpha)\sin(\beta) + \sin^{2}(\beta)$<br>
+
+Now we need to further analyse the fundamental relation of trigonometry.
+
+$-----$
+
+### $\cos^{2}(\theta) + \sin^{2}(\theta) = 1$
+
+#### Proof
+
+Let $ABC$ be a right triangle with hypothenuse $\overline{AB}$ and right angle $A\hat{C}B$.
+
+![ABC](./ABC.png)$
+
+The only subtle intuition is to understand that
+
+$\displaystyle \sin(B\hat{A}C) = \frac{\overline{BC}}{\overline{AB}}$
+
+and not just $\overline{BC}$. It could be strange at first because in general we are used to reason on a circumference of radius $1$ where $\sin(B\hat{A}C)$ would be exactly $\overline{BC}$, but the truth is that $\sin$ and $\cos$ are relations between quantities (in this case lengths), indeed $\sin(B\hat{A}C) = 1$ only if the length of the segment we identified as $\overline{BC}$ become equal to $\overline{AB}$ (which would destroy the structure of the triangle okok blabla. that's not the point), and when we reason having a radius which equals $1$, we have
+
+$\displaystyle \sin(B\hat{A}C) = \frac{\overline{BC}}{1} = \overline{BC}$
+
+which clarifies why this 'theorem' could be strange at first. I used quotes because this equality strictly derives by the meaning of $\sin$ and $\cos$ functions, there are not complex formulas or steps involved. Having said so, we have
+
+$\displaystyle \sin(B\hat{A}C) = \frac{\overline{BC}}{\overline{AB}}$<br>
+$\displaystyle \cos(B\hat{A}C) = \frac{\overline{AC}}{\overline{AB}}$
+
+then
+
+$\displaystyle \sin^2(B\hat{A}C) = \frac{\overline{BC}^2}{\overline{AB}^2}$<br>
+$\displaystyle \cos^2(B\hat{A}C) = \frac{\overline{AC}^2}{\overline{AB}^2}$<br>
+$->$<br>
+$\displaystyle \sin^2(B\hat{A}C) + \cos^2(B\hat{A}C) = \frac{\overline{BC}^2}{\overline{AB}^2} + \frac{\overline{AC}^2}{\overline{AB}^2} = \frac{\overline{BC}^2 + \overline{AC}^2}{\overline{AB}^2}$<br>
+
+and by the Pythagorean Theorem we exactly have that
+
+$\overline{BC}^2 + \overline{AC}^2 = \overline{AB}^2$
+
+then
+
+$\displaystyle \frac{\overline{BC}^2 + \overline{AC}^2}{\overline{AB}^2} = 1$
+
+and therefore
+
+$\cos^{2}(\theta) + \sin^{2}(\theta) = 1$
+
+always, for any $\theta$.
+
+$-----$
+
 </p>
 
 ## From Newton $e$ constant discovery to
