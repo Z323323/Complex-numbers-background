@@ -157,7 +157,9 @@
 
   $-----$
 
-### $\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) = $
+### $cos(\theta_1 + \theta_2) = \cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2)$
+
+#### Proof
 
 Consider the following picture.
 
@@ -171,7 +173,7 @@ $C\hat{O}D = \alpha - \beta$
 
 and
 
-$A = (1, 0)$<br>
+$A = (\cos(0), \sin(0)) = (1, 0)$<br>
 $B = (\cos(\alpha - \beta), \sin(\alpha - \beta))$<br>
 $C = (\cos(\alpha), \sin(\alpha))$<br>
 $D = (\cos(\beta), \sin(\beta))$
@@ -195,7 +197,7 @@ $(\cos(\alpha - \beta) - 1)^{2} + (\sin(\alpha - \beta) - 0)^{2} = (\cos(\alpha)
 $->$<br>
 $\cos^{2}(\alpha - \beta) - 2\cos(\alpha - \beta) + 1 + \sin^{2}(\alpha - \beta) = \cos^{2}(\alpha) - 2\cos(\alpha)\cos(\beta) + \cos^{2}(\beta) + \sin^{2}(\alpha) - 2\sin(\alpha)\sin(\beta) + \sin^{2}(\beta)$<br>
 
-Now we need to further analyse the fundamental relation of trigonometry.
+Now we need to further analyze the fundamental relation of trigonometry.
 
 $-----$
 
@@ -242,6 +244,64 @@ $\cos^{2}(\theta) + \sin^{2}(\theta) = 1$
 always, for any $\theta$.
 
 $-----$
+
+Back to our previous theorem we had
+
+$\cos^{2}(\alpha - \beta) - 2\cos(\alpha - \beta) + 1 + \sin^{2}(\alpha - \beta) = \cos^{2}(\alpha) - 2\cos(\alpha)\cos(\beta) + \cos^{2}(\beta) + \sin^{2}(\alpha) - 2\sin(\alpha)\sin(\beta) + \sin^{2}(\beta)$
+
+then by the fundamental relation of trigonometry we have
+
+$\cos^{2}(\alpha - \beta) + \sin^{2}(\alpha - \beta) = 1$<br>
+$\cos^{2}(\alpha) + \sin^{2}(\alpha) = 1$<br>
+$\cos^{2}(\beta) + \sin^{2}(\beta) = 1$
+
+thus
+
+$\cos^{2}(\alpha - \beta) - 2\cos(\alpha - \beta) + 1 + \sin^{2}(\alpha - \beta) = \cos^{2}(\alpha) - 2\cos(\alpha)\cos(\beta) + \cos^{2}(\beta) + \sin^{2}(\alpha) - 2\sin(\alpha)\sin(\beta) + \sin^{2}(\beta)$<br>
+$->$<br>
+$2 - 2\cos(\alpha - \beta) = - 2\cos(\alpha)\cos(\beta) - 2\sin(\alpha)\sin(\beta) + 2$<br>
+$->$<br>
+$2\cos(\alpha - \beta) = 2\cos(\alpha)\cos(\beta) + 2\sin(\alpha)\sin(\beta)$<br>
+$->$<br>
+$\cos(\alpha - \beta) = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta)$
+
+Now
+
+$\cos(\alpha + \beta) = \cos(\alpha - (- \beta))$<br>
+$->$<br>
+$\cos(\alpha - (- \beta)) = \cos(\alpha)\cos(- \beta) + \sin(\alpha)\sin(- \beta)$
+
+Now it's quite simple to see that
+
+$\cos(- \beta) = \cos(\beta)$<br>
+$\sin(- \beta) = - \sin(\beta)$
+
+then
+
+$\cos(\alpha - (- \beta)) = \cos(\alpha)\cos(- \beta) + \sin(\alpha)\sin(- \beta)$<br>
+$->$<br>
+$\cos(\alpha + \beta) = \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)$ _
+
+which finally proves the theorem.
+
+Since we are on the subject, let's prove
+
+$\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)$
+
+too.
+
+$\cos(\alpha - \beta) = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta)$<br>
+$->$<br>
+$\alpha = 90° - \alpha$<br>
+$->$<br>
+$\cos((90° - \alpha) - \beta) = \cos(90° - \alpha)\cos(\beta) + \sin(90° - \alpha)\sin(\beta)$<br>
+$---$<br>
+$\cos((90° - \alpha) - \beta) = \cos(90° - \alpha - \beta) = \cos(90° - (\alpha + \beta)) = \sin(\alpha + \beta)$<br>
+$---$<br>
+$\cos((90° - \alpha) - \beta) = \cos(90° - \alpha)\cos(\beta) + \sin(90° - \alpha)\sin(\beta)$<br>
+$->$<br>
+$\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)$ _
+
 
 </p>
 
