@@ -209,7 +209,7 @@ $-----$
 
 Let $ABC$ be a right triangle with hypothenuse $\overline{AB}$ and right angle $A\hat{C}B$.
 
-![ABC](./ABC.png)$
+![ABC](./ABC.jpg)$
 
 The only subtle intuition is to understand that
 
