@@ -178,6 +178,8 @@ $B = (\cos(\alpha - \beta), \sin(\alpha - \beta))$<br>
 $C = (\cos(\alpha), \sin(\alpha))$<br>
 $D = (\cos(\beta), \sin(\beta))$
 
+Here I want to open a little parenthesis on $A$. I specified $A = (\cos(0), \sin(0))$ because this theorem is built on $\sin$ and $\cos$ relations and not exactly on the previous picture where $A$ sits on $(1, 0)$ because of the radius. The fact things must have sense graphically is often a problem in math, because math is invisible. The whole structure of computing distances below is by math means only a transformation of numbers which match a logic. The logic we have is about distances we see on the picture, but this theorem is really just about relations about $\sin$ and $\cos$, the intuition below about $\overline{AB} = \overline{CD}$ is just a god hint. I said this whole stuff because this theorem is not related with the length of the radius, that is, it works for any radius, hence the hypothesis of $r = 1$, doesn't really exist. So don't think at $A$ like the point you see, but as the virtual point of coordinates $(\cos(0), \sin(0))$.
+
 Since
 
 $A\hat{O}B = C\hat{O}D = \alpha - \beta$<br>
@@ -213,7 +215,7 @@ The only subtle intuition is to understand that
 
 $\displaystyle \sin(B\hat{A}C) = \frac{\overline{BC}}{\overline{AB}}$
 
-and not just $\overline{BC}$. It could be strange at first because in general we are used to reason on a circumference of radius $1$ where $\sin(B\hat{A}C)$ would be exactly $\overline{BC}$, but the truth is that $\sin$ and $\cos$ are relations between quantities (in this case lengths), indeed $\sin(B\hat{A}C) = 1$ only if the length of the segment we identified as $\overline{BC}$ become equal to $\overline{AB}$ (which would destroy the structure of the triangle okok blabla. that's not the point), and when we reason having a radius which equals $1$, we have
+and not just $\overline{BC}$. It could be strange at first because in general we are used to reason on a circumference of radius $1$ where $\sin(B\hat{A}C)$ would be exactly $\overline{BC}$, but the truth is that $\sin$ and $\cos$ are relations between quantities (in this case lengths), indeed $\sin(B\hat{A}C) = 1$ only if the length of the segment we identified as $\overline{BC}$ is equal to $\overline{AB}$ (which would destroy the structure of the triangle but that's not the point here, indeed $\sin(90°)$ still equals $1$ after this revelation), and when we reason having a radius which equals $1$, we have
 
 $\displaystyle \sin(B\hat{A}C) = \frac{\overline{BC}}{1} = \overline{BC}$
 
@@ -302,6 +304,21 @@ $\cos((90° - \alpha) - \beta) = \cos(90° - \alpha)\cos(\beta) + \sin(90° - \a
 $->$<br>
 $\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)$ _
 
+$-----$
+
+Now we can finally reconnect with the complex multiplication. We had
+
+$|z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) + i(\cos(\theta_1)\sin(\theta_2) + \sin(\theta_1)\cos(\theta_2)))$<br>
+
+Since now we know that
+
+$\cos(\alpha + \beta) = \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)$<br>
+$and$<br>
+$\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)$
+
+$|z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) + i(\cos(\theta_1)\sin(\theta_2) + \sin(\theta_1)\cos(\theta_2)))$<br>
+$->$<br>
+$|z_1||z_2|(\cos(\theta_1 + \theta_2) + i(\sin(\theta_1 + \theta_2)))$
 
 </p>
 
