@@ -83,7 +83,7 @@
   
 </p>
 
-## Tigonometric shape of complex numbers
+## Tigonometric form of complex numbers
 
 <p>
   Some basic knowledge of trigonometry enables us to represent complex numbers in a quite intuitive form which only involves the length of $z$ segment, and the $\sin$ and $\cos$ functions, which in turn is the exact same of the "algebraic" form.
@@ -120,7 +120,7 @@
 
   $z = \sqrt{x^{2} + y^{2}}\cos(\theta) + \sqrt{x^{2} + y^{2}}i\sin(\theta)$
 
-  where $\theta$ is the angle in the middle of the $z$ segment and the $x-axis$, and $\sqrt{x^{2} + y^{2}}$ is basically the formula derived by the Pythagorean Theorem which calculates the hypothenuse of a triangle, which in our case is exactly the $z$ segment, and for which you can find an intuitive graphical proof at [https://it.wikipedia.org/wiki/Teorema_di_Pitagora] (just watch the images). Now, calling
+  where $\theta$ is the angle in the middle of the $z$ segment and the $x-axis$, and $\sqrt{x^{2} + y^{2}}$ is basically the formula derived from the Pythagorean Theorem which calculates the hypothenuse of a triangle, which in our case is exactly the $z$ segment (and for which you can find an intuitive graphical proof at [https://it.wikipedia.org/wiki/Teorema_di_Pitagora] just watching the images). Now, calling
 
   $|z| = \sqrt{x^{2} + y^{2}}$<br>
   $->$<br>
@@ -157,7 +157,8 @@
 
   $-----$
 
-### $cos(\theta_1 + \theta_2) = \cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2)$
+### $\cos(\theta_1 + \theta_2) = \cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2)$
+### $\sin(\theta_1 + \theta_2) = \sin(\theta_1)\cos(\theta_2) + \cos(\theta_1)\sin(\theta_2)$
 
 #### Proof
 
@@ -209,7 +210,7 @@ $-----$
 
 Let $ABC$ be a right triangle with hypothenuse $\overline{AB}$ and right angle $A\hat{C}B$.
 
-![ABC](./ABC.jpg)$
+![ABC](./ABC.jpg)
 
 The only subtle intuition is to understand that
 
@@ -284,13 +285,11 @@ $\cos(\alpha - (- \beta)) = \cos(\alpha)\cos(- \beta) + \sin(\alpha)\sin(- \beta
 $->$<br>
 $\cos(\alpha + \beta) = \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)$ _
 
-which finally proves the theorem.
+which finally proves the first theorem.
 
-Since we are on the subject, let's prove
+Let's prove the second:
 
 $\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)$
-
-too.
 
 $\cos(\alpha - \beta) = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta)$<br>
 $->$<br>
@@ -316,10 +315,32 @@ $\cos(\alpha + \beta) = \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)$<br>
 $and$<br>
 $\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)$
 
-$|z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) + i(\cos(\theta_1)\sin(\theta_2) + \sin(\theta_1)\cos(\theta_2)))$<br>
-$->$<br>
+$z_1z_2 = |z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) + i(\cos(\theta_1)\sin(\theta_2) + \sin(\theta_1)\cos(\theta_2)))$<br>
+$=$<br>
 $|z_1||z_2|(\cos(\theta_1 + \theta_2) + i(\sin(\theta_1 + \theta_2)))$
 
+</p>
+
+## Trigonometric divison
+
+<p>
+  We recycle the previous result and state that if
+
+  $z = z_1 / z_2$<br>
+  $->$<br>
+  $zz_2 = z_1$
+
+  then
+
+  $|z||z_2|(\cos(\theta + \theta_2) + i(\sin(\theta + \theta_2))) = |z_1|(\cos(\theta_1) + i\sin(\theta_1))$<br>
+  $->$<br>
+  $\displaystyle |z| = \frac{|z_1|}{|z_2|}$<br>
+  $and$<br>
+  $\cos(\theta) + i\sin(\theta) = \cos(\theta_1 - \theta_2) + i(\sin(\theta_1 - \theta_2))$<br>
+  $->$<br>
+  $\displaystyle z = \frac{z_1}{z_2} = \frac{|z_1|}{|z_2|}\cos(\theta_1 - \theta_2) + i(\sin(\theta_1 - \theta_2))$
+
+  
 </p>
 
 ## From Newton $e$ constant discovery to
