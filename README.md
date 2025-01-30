@@ -525,8 +525,11 @@ $|z_1||z_2|(\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2))$
 
   Since these solutions will only regard the angles, they will draw a regular polygon around $0$ in the cartesian graph.
 
-  ![R](./R.png)$
-  **In the picture, $\alpha = \frac{\theta_2}{n}$ and $\beta = \frac{2k\pi}{n}$**
+  ![R](./R.png)
+  
+  In the picture, $\displaystyle \alpha = \frac{\theta_2}{n}$ and $\displaystyle \beta = \frac{2k\pi}{n}$
   
 </p>
+
+## 
 
