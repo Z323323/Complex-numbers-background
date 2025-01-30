@@ -340,7 +340,7 @@ $|z_1||z_2|(\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2))$
 
 </p>
 
-## Powers
+## Trigonometric powers
 
 <p>
   
@@ -431,75 +431,102 @@ $|z_1||z_2|(\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2))$
 
   $e^{i2\pi} = 1$
 
+  and also
+
+  $e^{ik2\pi} = 1, k \in Z$
+
 </p>
 
-
-
-
-
-#### Ex. $x^{2} - 1 = 0$
+## $e^{z}$ analysis
 
 <p>
-  $x^{2} - 1 = 0$<br>
-  $x^{2} = 1$<br>
-  $x = 1$ or $x = - 1$
+  We can take the previous results and derive some basic rules in order to expand our view.
 
-  This is not a complex solution, since we don't have $x = \sqrt{- 1}$ but $\sqrt{x^{2}} = \pm \sqrt{1}$, and $x^{2} - 1 = 0$ equals:
+  Since we had
 
-  $(x - 1)[x - (- 1)] = (x - 1)(x + 1) = 0$
+  $e^{iy} = \cos(y) + i\sin(y)$
+
+  if
+
+  $z = x + iy$
+
+  then
+
+  $e^{z} = e^{x}(\cos(y) + i\sin(y))$
+
+  We can easily see that this form expand $e^{x}, x \in R$ because if
+
+  $z = x + i0$
+
+  then
+
+  $e^{z} = e^{x}(\cos(0) + i\sin(0)) = e^{x}(1 + 0) = e^{x}$
+
+  As we already saw $e^{ik2\pi} = 1, k \in Z$, that is, $e^{iy}$ is periodic every $ik2\pi$, thus $z = x + iy$ will be periodic in the same way, in fact
+
+  $e^{x + iy + i2k\pi} = e^{x + i(y + 2k\pi)} = e^{x}(\cos(y + 2k\pi) + i\sin(y + 2k\pi)) = e^{x}(\cos(y) + i\sin(y))$
+
+  Now we can see $2$ more properties, let $z_1 = x_1 + iy_1$ and $z_2 = x_2 + iy_2$, we have 
+
+  - $e^{z_1 + z_2} = e^{z_1}e^{z_2}$
+
+  ![P1](./P1.png)
+  
+  - $e^{z^{n}} = e^{zn}$ 
+
+  ![P2](./P2.png)
+
+  For completeness purposes, we can see that a complex number $z$ can be also expressed using the form below
+
+  $z = |z|(\cos(\theta) + i\sin(\theta)) = |z|e^{i\theta}$ 
+
 </p>
 
-#### Ex. $x^{3} - 1 = 0$
+## Roots in the complex field
 
 <p>
-  Now, let's look at why complex numbers are so fascinating:
+  We are finally coming to what matters. The $nth$ roots of a complex number $w$ such that
 
-  $x^{3} - 1 = 0$<br>
-  $(x - 1)(x^2 + x + 1) = 0$<br>
+  $z^{n} = w$
 
-  Here we know that $1$ is a solution for sure, but look at the other solutions:
+  are the solutions $z \in C$ which satisfy the equation. Let both $\neq 0$ then
 
-  $x^2 + x + 1 = 0$
+  $z = |z|(\cos(\theta_1) + i\sin(\theta_1))$<br>
+  $w = |w|(\cos(\theta_2) + i\sin(\theta_2))$
 
-  Applying [ https://github.com/xyzhyn/Quadratic-formula-derivation ], we find:
+  We necessarily have
 
-  $\displaystyle x_{1} = \frac{- 1 + \sqrt{1^{2} - 4 \cdot 1 \cdot 1}}{2} = \frac{- 1}{2} + \frac{\sqrt{- 3}}{2}$
+  $w = |z|^{n}(\cos(n(\theta_1 + 2k\pi)) + i\sin(n(\theta_1 + 2k\pi)))$<br>
+  $->$<br>
+  - $|z| = \sqrt[n]{|w|}$
+  - $\displaystyle \theta_1 = \frac{\theta_2 + 2k\pi}{n}$
 
-  $\displaystyle x_{2} = \frac{- 1 - \sqrt{1^{2} - 4 \cdot 1 \cdot 1}}{2} = \frac{- 1}{2} - \frac{\sqrt{- 3}}{2}$
+  Here lies a quite magical step. We can see that
 
-  Hence the only way to break down $x^{3} - 1 = 0$ is:
+  $\displaystyle \frac{\theta_2 + 2k\pi}{n}$
 
-  $\displaystyle (x - 1)[x - (\frac{- 1}{2} + \frac{\sqrt{- 3}}{2})][x - (\frac{- 1}{2} - \frac{\sqrt{- 3}}{2})]$
-</p>
+  is a solution for any $0 \leq k$ integer (negative part will be the same so, let's simplify if we can). But now, we see that until
 
-#### Ex. $x^{4} - 1 = 0$
+  $k = n - 1$
 
-<p>
-  $x^{4} - 1 = 0$<br>
-  $(x - 1)(x^{3} + x^{2} + x + 1) = 0$<br>
-  $(x - 1)[(x + 1)(x^{2} + 1)] = 0$<br>
-  $(x - 1)(x + 1)(x^{2} + 1) = 0$<br>
+  our solutions are different, that is, the angles are different (and after that, i.e. $k = n$ they will start repeating themselves). Indeed
 
-  We have $4$ solutions:
+  $\displaystyle \frac{\theta_2 + 2k\pi}{n} = \frac{\theta_2}{n} + \frac{2k\pi}{n}$
 
-  $x = 1$<br>
-  $x = - 1$<br>
-  $x = \sqrt{- 1}$<br>
-  $x = - \sqrt{- 1}$
+  and letting $k = n$
 
-  indeed
+  $\displaystyle \frac{\theta_2}{n} + \frac{2k\pi}{n} = \frac{\theta_2}{n} + 2\pi = \frac{\theta_2}{n}$
 
-  $x^{4} - 1 = (x - 1)(x + 1)(x - \sqrt{- 1})(x + \sqrt{- 1})$<br>
+  which is the same solution we would get having $k = 0$.
 
- #### Ex. $x^{5} - 1 = 0$
+  This whole reasoning means that we will have $n$ distinct solutions for
 
- <p>
-   $x^{5} - 1 = 0$<br>
-   $(x - 1)(x^{4} + x^{3} + x^{2} + x + 1)$<br>
-   $(x - 1)(x - 1)(x + 1)(x - \sqrt{- 1})(x + \sqrt{- 1})$
+  $k = \\{0, 1, \dots, n - 1\\}$
 
-   Here we can recon that it's not true that $x^{n} - 1 = 0$ has **always** $n$ solutions.
- </p>
+  Since these solutions will only regard the angles, they will draw a regular polygon around $0$ in the cartesian graph.
 
+  ![R](./R.png)$
+  **In the picture, $\alpha = \frac{\theta_2}{n}$ and $\beta = \frac{2k\pi}{n}$**
   
 </p>
+
