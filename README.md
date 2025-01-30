@@ -177,7 +177,7 @@ $B = (\cos(\alpha - \beta), \sin(\alpha - \beta))$<br>
 $C = (\cos(\alpha), \sin(\alpha))$<br>
 $D = (\cos(\beta), \sin(\beta))$
 
-Here I want to open a little parenthesis on $A$. I specified $A = (\cos(0), \sin(0))$ because this theorem is built on $\sin$ and $\cos$ relations and not exactly on the previous picture where $A$ sits on $(1, 0)$ because of the radius. The fact things must have sense graphically is often a problem in math, because math is invisible. The whole structure of computing distances below is by math means only a transformation of numbers which match a logic. The logic we have is about distances we see on the picture, but this theorem is really just about relations about $\sin$ and $\cos$, the intuition below about $\overline{AB} = \overline{CD}$ is just a god hint. I said this whole stuff because this theorem is not related with the length of the radius, that is, it works for any radius, hence the hypothesis of $r = 1$, doesn't really exist. So don't think at $A$ like the point you see, but as the virtual point of coordinates $(\cos(0), \sin(0))$.
+Here I want to open a little parenthesis on $A$. I specified $A = (\cos(0), \sin(0))$ because this theorem is built on $\sin$ and $\cos$ relations and the previous picture where $A$ sits on $(1, 0)$ could be misleading. This is because this theorem is not related with the length of the radius, that is, it works for any radius, hence the hypothesis of $r = 1$, doesn't really exist, that is, it just turns out that the previous picture represents the problem and $A = (\cos(0), \sin(0)) = (1, 0)$ always, and not because it is an hypothesis.
 
 Since
 
@@ -413,7 +413,7 @@ $|z_1||z_2|(\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2))$
 
   $e^{iy} = \cos(y) + i\sin(y)$
 
-  When we have $y = \pi$ we obtain
+  and when we have $y = \pi$ we obtain
 
   $e^{i\pi} = \cos(\pi) + i\sin(\pi) = - 1 + 0 = - 1$
 
@@ -422,8 +422,18 @@ $|z_1||z_2|(\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2))$
   $e^{i\pi} = - 1$
 
   which is the Euler Identity.
-  
+
+  When $y = 2\pi$ we get
+
+  $e^{i2\pi} = \cos(2\pi) + i\sin(2\pi) = 1 + 0 = 1$
+
+  then
+
+  $e^{i2\pi} = 1$
+
 </p>
+
+
 
 
 
