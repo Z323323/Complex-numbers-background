@@ -531,5 +531,3 @@ $|z_1||z_2|(\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2))$
   
 </p>
 
-## 
-
