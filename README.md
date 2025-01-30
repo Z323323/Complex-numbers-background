@@ -317,7 +317,7 @@ $\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)$
 
 $z_1z_2 = |z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) + i(\cos(\theta_1)\sin(\theta_2) + \sin(\theta_1)\cos(\theta_2)))$<br>
 $=$<br>
-$|z_1||z_2|(\cos(\theta_1 + \theta_2) + i(\sin(\theta_1 + \theta_2)))$
+$|z_1||z_2|(\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2))$
 
 </p>
 
@@ -332,18 +332,67 @@ $|z_1||z_2|(\cos(\theta_1 + \theta_2) + i(\sin(\theta_1 + \theta_2)))$
 
   then
 
-  $|z||z_2|(\cos(\theta + \theta_2) + i(\sin(\theta + \theta_2))) = |z_1|(\cos(\theta_1) + i\sin(\theta_1))$<br>
+  $|z||z_2|(\cos(\theta + \theta_2) + i\sin(\theta + \theta_2)) = |z_1|(\cos(\theta_1) + i\sin(\theta_1))$<br>
   $->$<br>
   $\displaystyle |z| = \frac{|z_1|}{|z_2|}$<br>
   $and$<br>
-  $\cos(\theta) + i\sin(\theta) = \cos(\theta_1 - \theta_2) + i(\sin(\theta_1 - \theta_2))$<br>
+  $\cos(\theta) + i\sin(\theta) = \cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2)$<br>
   $->$<br>
-  $\displaystyle z = \frac{z_1}{z_2} = \frac{|z_1|}{|z_2|}\cos(\theta_1 - \theta_2) + i(\sin(\theta_1 - \theta_2))$
+  $\displaystyle z = \frac{z_1}{z_2} = \frac{|z_1|}{|z_2|}(\cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2))$
 
+</p>
+
+## Powers
+
+<p>
+  
+  It's quite trivial now to see that
+
+  $z^{n} = |z|^{n}(\cos(n\theta) + i\sin(n\theta))$
   
 </p>
 
-## From Newton $e$ constant discovery to
+## De Moivre formula
+
+<p>
+  When $|z| = 1$ we have De Moivre formula defined as
+
+  $z^{n} = \cos(n\theta) + i\sin(n\theta)$
+  
+</p>
+
+## From Newton $e$ constant discovery to Euler Identity
+
+<p>
+  Long time ago Newton faced the topic of derivatives and wanted to find a function whose derivative was equivalent to itself. Since polynomials gets downgraded by derivatives it couldn't be a normal polynomial, but what about an infinite polynomial which approximates the function? Now, accidentally, every function which has infinite many derivatives can be approximated towards perfection in a point $x_0$ through an infinite polynomial which is called Taylor series, which is defined as
+
+  $\displaystyle \sum_{n = 0}^{\infty} \frac{f^{(n)}(x_0)}{n!}(x - x_0)^{n}$
+
+  where $f^{(n)}(x_0)$ represents the $nth$ derivative of $f(x)$ calculated in $x_0$. I won't derive the series from scratch since there are no ways to make it a fast process [https://math.stackexchange.com/questions/706282/how-are-the-taylor-series-derived], but we can think of the Taylor series as a polynomial which approximates $f(x)$ centered in $x_0$ better and better the more addends we consider, that is, the more derivatives we consider of the function. If we have a function which has infinite many derivatives then the Taylor series will exactly be that function. Now, if we consider the point $x_0 = 0$ (which is fine as long as our function is defined in $x = 0$) we get the same result of the previous function, fixing the center of the approximation in $x = 0$ which is fine, and obtaining 
+
+  $\displaystyle \sum_{n = 0}^{\infty} \frac{f^{(n)}(0)}{n!}x^{n}$
+
+  which is easier to calculate and it's called Maclaurin series.
+
+  Now the fun part. Since Newton wanted a function which derived was equal to itself, he literally created it using Maclaurin series. Since this function's $nth$ derivative is equal to itself (hence it will be equal for every addend) we can take it as factor outside the summation of the Maclaurin series, obtaining
+
+  $\displaystyle f(0) \sum_{n = 0}^{\infty} \frac{1}{n!}x^{n}$<br>
+  $->$<br>
+  $\displaystyle f(0) \sum_{n = 0}^{\infty} \frac{x^{n}}{n!}$
+
+  At this point he had another straightforward while smart intuition. If $f(0) = 1$ we are done and we have our function, thus the answer is $f(x) = e^{x}$ for some mysterious number which we call $e$, because $e^{0} = 1$ for any $e$, then
+
+  $\displaystyle e^{x} = \sum_{n = 0}^{\infty} \frac{x^{n}}{n!}$
+
+  and if we find the value of the function for $x = 1$ we can even compute the previous mysterious number, obtaining
+
+  $\displaystyle e^{1} = e = \sum_{n = 0}^{\infty} \frac{1}{n!} = 1 + \frac{1}{2} + \frac{1}{3!} + \frac{1}{4!} + \dots$
+
+  Thus now you know what $e$ really is. Now, let's expand the surface.
+
+  
+  
+</p>
 
 
 
