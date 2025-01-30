@@ -102,15 +102,13 @@
   
   $\theta = 180°$<br>
   $->$<br>
-  $\theta = \pi$
-
-  $-----$
-
+  $\theta = \pi$<br>
+  $---$<br>
   $\theta = 90°$<br>
   $->$<br>
   $\displaystyle \theta = \frac{\pi}{2}$
 
-  and so on. We can safely set $r = 1$ as angles are not affected by the length of the radius, indeed it's clear that radians are the true representation of angles.
+  and so on.
 
   Now, back to our complex numbers, since
 
@@ -388,9 +386,42 @@ $|z_1||z_2|(\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2))$
 
   $\displaystyle e^{1} = e = \sum_{n = 0}^{\infty} \frac{1}{n!} = 1 + \frac{1}{2} + \frac{1}{3!} + \frac{1}{4!} + \dots$
 
-  Thus now you know what $e$ really is. Now, let's expand the surface.
+  Thus now you know what $e$ really is. Now, let's expand the surface to the complex field.
 
-  
+  We define
+
+  $\displaystyle e^{z} = \sum_{n = 0}^{\infty} \frac{z^{n}}{n!}$
+
+  simply considering $x$ in the complex field, hence as complex number called $z$. We define $z$ as a pure complex number, thus
+
+  $z = iy$<br>
+  $->$<br>
+  $\displaystyle e^{iy} = \sum_{n = 0}^{\infty} \frac{i^{n}y^{n}}{n!}$
+
+  Since $i \cdot i = - 1$ we split the summation in half and get
+
+  $\displaystyle e^{iy} = \sum_{n = 0}^{\infty} \frac{i^{n}y^{n}}{n!} = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n}}{(2n)!} + i\sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n + 1}}{(2n + 1)!}$
+
+  Take your time to digest this one since it's not simple. You'll find out it basically acts in the future :').
+
+  Now, if you apply Maclaurin to $\sin$ and $\cos$ functions, you'll find out that
+
+  $\displaystyle \sin(y) = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n + 1}}{(2n + 1)!}$<br>
+  $\displaystyle \cos(y) = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n}}{(2n)!}$
+
+  hence
+
+  $e^{iy} = \cos(y) + i\sin(y)$
+
+  When we have $y = \pi$ we obtain
+
+  $e^{i\pi} = \cos(\pi) + i\sin(\pi) = - 1 + 0 = - 1$
+
+  then
+
+  $e^{i\pi} = - 1$
+
+  which is the Euler Identity.
   
 </p>
 
