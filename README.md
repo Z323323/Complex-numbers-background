@@ -29,6 +29,10 @@
 
   $i^{2} = i \cdot i = - 1$
 
+  and
+
+  $\sqrt{- 1} = i\sqrt{1} = i$
+
   When we deal with the cartesian graph, every point mapped on it can be represented using this form:
 
   $(x_{?}, y_{?})$
@@ -485,20 +489,20 @@ $|z_1||z_2|(\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2))$
 ## Roots in the complex field
 
 <p>
-  We are finally coming to what matters. The $nth$ roots of a complex number $w$ such that
+  We are finally coming to what matters. The $nth$ roots of a complex number $\omega$ such that
 
-  $z^{n} = w$
+  $z^{n} = \omega$
 
   are the solutions $z \in C$ which satisfy the equation. Let both $\neq 0$ then
 
   $z = |z|(\cos(\theta_1) + i\sin(\theta_1))$<br>
-  $w = |w|(\cos(\theta_2) + i\sin(\theta_2))$
+  $\omega = |\omega|(\cos(\theta_2) + i\sin(\theta_2))$
 
   We necessarily have
 
-  $w = |z|^{n}(\cos(n(\theta_1 + 2k\pi)) + i\sin(n(\theta_1 + 2k\pi)))$<br>
+  $\omega = |z|^{n}(\cos(n(\theta_1 + 2k\pi)) + i\sin(n(\theta_1 + 2k\pi)))$<br>
   $->$<br>
-  - $|z| = \sqrt[n]{|w|}$
+  - $|z| = \sqrt[n]{|\omega|}$
   - $\displaystyle \theta_1 = \frac{\theta_2 + 2k\pi}{n}$
 
   Here lies a quite magical step. We can see that
