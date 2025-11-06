@@ -4,6 +4,8 @@ Complex numbers are a necessary part of math which allows to give a solution to 
 
 ```math
 x = \sqrt{- n} \notin R
+```
+```math
 x = \sqrt{- n} = i\sqrt{n} = Im(\sqrt{n}) \in C
 ```
 
@@ -20,6 +22,8 @@ Since
 
 ```math
 n > 0, \sqrt{- n} = i\sqrt{n}
+```
+```math
 (\sqrt{- n})^{2} = - n = (i\sqrt{n})^{2} = i^{2}(\sqrt{n})^{2}
 ```
 
@@ -55,78 +59,99 @@ software and the forced $3rd-person$ POV.
 
 ![sqrt3D](sqrt3D.png)
 
-Now, since we know why the $x-axis$ is shared between $R$ and $C$, and we can represent any number in an "algebraic" form:
+Now, since we know why the $x-axis$ is shared between $R$ and $C$, and we can represent any number in an "algebraic" form, then
 
-$z = (x, y) = x + y$ with $z, x, y \in R$ 
-  
-  is the representation of any number on the $R-plane$ part of the cartesian graph, while
-  
-  $z = (x, Im(y)) = x + Im(y)$ with $z, Im(y) \in C, x, y \in R$ 
-  
-  is the representation of any number on the $C-plane$ part of the cartesian graph.
+```math
+z = (x, y) \sim x + y
+```
 
-  Now we can further observe a couple of complex numbers graphical representation in a clearer representation of the $C$ plane.
+with $z, x, y \in R$, is the representation of any number on the $R-plane$ part of the cartesian graph, while
 
-  $z_1 = 1 + Im(1)$<br>
-  $z_2 = - 3 - Im(2)$
+```math
+z = (x, Im(y)) = x + Im(y)
+```
 
-  ![CP](./CP.png)
+with $z, Im(y) \in C, x, y \in R, is the representation of any number on the $C-plane$ part of the cartesian graph.
 
-  Now we can finally see the multiplication.
+Now we can further observe a couple of complex numbers graphical representation in a clearer representation of the $C$ plane.
 
-  $z_{1} = (x_{1}, Im(y_{1})) = x_{1} + Im(y_{1}) = x_{1} + iy_{1}$<br>
-  $z_{2} = (x_{2}, Im(y_{2})) = x_{2} + Im(y_{2}) = x_{2} + iy_{2}$
-  
-  $(x_{1}, Im(y_{1})) \cdot (x_{2}, Im(y_{2})) = (x_{1} + iy_{1})(x_{2} + iy_{2}) = x_{1}x_{2} + x_{1}iy_{2} + iy_{1}x_{2} + (- 1)y_{1}y_{2} = x_{1}x_{2} - y_{1}y_{2} + i(x_{1}y_{2} + y_{1}x_{2}) = (x_{1}x_{2} - y_{1}y_{2}, x_{1}y_{2} + y_{1}x_{2})$
- 
-</p>
+```math
+z_1 = 1 + Im(1)
+```
+```math
+z_2 = - 3 - Im(2)
+```
+
+![CP](./CP.png)
+
+Now we can finally see the multiplication.
+
+```math
+z_{1} = (x_{1}, Im(y_{1})) = x_{1} + Im(y_{1}) = x_{1} + iy_{1}
+```
+```math
+z_{2} = (x_{2}, Im(y_{2})) = x_{2} + Im(y_{2}) = x_{2} + iy_{2}
+```
+```math
+(x_{1}, Im(y_{1})) \cdot (x_{2}, Im(y_{2})) = (x_{1} + iy_{1})(x_{2} + iy_{2}) = x_{1}x_{2} + x_{1}iy_{2} + iy_{1}x_{2} + (- 1)y_{1}y_{2} = x_{1}x_{2} - y_{1}y_{2} + i(x_{1}y_{2} + y_{1}x_{2}) = (x_{1}x_{2} - y_{1}y_{2}, x_{1}y_{2} + y_{1}x_{2})
+```
 
 ## Complex divison using algebraic form
 
-<p>
-  
-  We can make a little trick to avoid $i$ in the denominator and have a more readable general form for divison.
+We can make a little trick to avoid $i$ in the denominator and have a more readable general form for divison.
 
-  $\displaystyle \frac{z_1}{z_2} = \frac{x_1 + iy_1}{x_2 + iy_2} = \frac{x_1 + iy_1}{x_2 + iy_2} \cdot \frac{x_2 - iy_2}{x_2 - iy_2} = \frac{(x_1 + iy_1)(x_2 - iy_2)}{x_2^2 + y_2^2} = \frac{x_1x_2 + y_1y_2 + i(x_2y_1 - x_1y_2)}{x_2^2 + y_2^2} = \frac{x_1x_2 + y_1y_2}{x_2^2 + y_2^2} + i\frac{x_2y_1 - x_1y_2}{x_2^2 + y_2^2}$
-  
-</p>
+```math
+\displaystyle \frac{z_1}{z_2} = \frac{x_1 + iy_1}{x_2 + iy_2} = \frac{x_1 + iy_1}{x_2 + iy_2} \cdot \frac{x_2 - iy_2}{x_2 - iy_2} = \frac{(x_1 + iy_1)(x_2 - iy_2)}{x_2^2 + y_2^2} = \frac{x_1x_2 + y_1y_2 + i(x_2y_1 - x_1y_2)}{x_2^2 + y_2^2} = \frac{x_1x_2 + y_1y_2}{x_2^2 + y_2^2} + i\frac{x_2y_1 - x_1y_2}{x_2^2 + y_2^2}
+```
 
 ## Tigonometric form of complex numbers
 
-<p>
-  Some basic knowledge of trigonometry enables us to represent complex numbers in a quite intuitive form which only involves the length of $z$ segment, and the $\sin$ and $\cos$ functions, which in turn is the exact same of the "algebraic" form.
+Some basic knowledge of trigonometry enables us to represent complex numbers in a quite intuitive form which only involves the length of $z$ segment, and the $\sin$ and $\cos$ functions, which in turn is the exact same of the "algebraic" form.
 
-  If you don't remember radians values for angles I give you a quick remainder. The circumference of a circle of radius $r = 1$ is given by
+If you don't remember radians values for angles I give you a quick remainder. The circumference of a circle of radius $r = 1$ is given by
 
-  $C = 2 \pi r$
+```math
+C = 2 \pi r
+```
 
-  (because $\pi = C / 2r$).
+(because $\pi = C / 2r$).
 
-  This means that we can represent the round angle ($360°$) $\theta$ as $(r = 1)$
+This means that we can represent the round angle ($360°$) $\theta$ as $(r = 1)$
 
-  $\theta = 2\pi$
+```
+\theta = 2\pi
+```
 
-  and every other angle follows, then if
+and every other angle follows, then if
+
+```math
+\theta = 180°
+```
+```math
+\theta = \pi
+```
+```math
+\theta = 90°
+```
+```math
+\displaystyle \theta = \frac{\pi}{2}
+```
+
+and so on.
+
+Now, back to our complex numbers, since
+
+```math
+z = x + Im(y) = x + iy
+```
   
-  $\theta = 180°$<br>
-  $->$<br>
-  $\theta = \pi$<br>
-  $---$<br>
-  $\theta = 90°$<br>
-  $->$<br>
-  $\displaystyle \theta = \frac{\pi}{2}$
+we can define $z \in C$ as
 
-  and so on.
+```math
+z = \sqrt{x^{2} + y^{2}}\cos(\theta) + \sqrt{x^{2} + y^{2}}i\sin(\theta)
+```
 
-  Now, back to our complex numbers, since
-
-  $z = x + Im(y) = x + iy$
-  
-  we can define $z \in C$ as
-
-  $z = \sqrt{x^{2} + y^{2}}\cos(\theta) + \sqrt{x^{2} + y^{2}}i\sin(\theta)$
-
-  where $\theta$ is the angle in the middle of the $z$ segment and the $x-axis$, and $\sqrt{x^{2} + y^{2}}$ is basically the formula derived from the Pythagorean Theorem which calculates the hypothenuse of a triangle, which in our case is exactly the $z$ segment (and for which you can find an intuitive graphical proof at [https://it.wikipedia.org/wiki/Teorema_di_Pitagora] just watching the images). Now, calling
+where $\theta$ is the angle in the middle of the $z$ segment and the $x-axis$, and $\sqrt{x^{2} + y^{2}}$ is basically the formula derived from the Pythagorean Theorem which calculates the hypothenuse of a triangle, which in our case is exactly the $z$ segment (and for which you can find an intuitive graphical proof at [https://it.wikipedia.org/wiki/Teorema_di_Pitagora] just watching the images). Now, calling
 
   $|z| = \sqrt{x^{2} + y^{2}}$<br>
   $->$<br>
