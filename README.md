@@ -118,23 +118,17 @@ C = 2 \pi r
 
 This means that we can represent the round angle ($360°$) $\theta$ as $(r = 1)$
 
-```
+```math
 \theta = 2\pi
 ```
 
 and every other angle follows, then if
 
 ```math
-\theta = 180°
+\theta = 180°, \theta = \pi
 ```
 ```math
-\theta = \pi
-```
-```math
-\theta = 90°
-```
-```math
-\displaystyle \theta = \frac{\pi}{2}
+\theta = 90°, \displaystyle \theta = \frac{\pi}{2}
 ```
 
 and so on.
@@ -153,40 +147,39 @@ z = \sqrt{x^{2} + y^{2}}\cos(\theta) + \sqrt{x^{2} + y^{2}}i\sin(\theta)
 
 where $\theta$ is the angle in the middle of the $z$ segment and the $x-axis$, and $\sqrt{x^{2} + y^{2}}$ is basically the formula derived from the Pythagorean Theorem which calculates the hypothenuse of a triangle, which in our case is exactly the $z$ segment (and for which you can find an intuitive graphical proof at [https://it.wikipedia.org/wiki/Teorema_di_Pitagora] just watching the images). Now, calling
 
-  $|z| = \sqrt{x^{2} + y^{2}}$<br>
-  $->$<br>
-  $z = |z|\cos(\theta) + |z|i\sin(\theta)$<br>
-  $->$<br>
-  $z = |z|(\cos(\theta) + i\sin(\theta))$
+```math
+|z| = \sqrt{x^{2} + y^{2}}
+```
+```math
+z = |z|\cos(\theta) + |z|i\sin(\theta)
+```
+```math
+z = |z|(\cos(\theta) + i\sin(\theta))
+```
 
-  we basically derived our trigonometric form for any complex number $z$, for which you can find a graphical representation below.
+we basically derived our trigonometric form for any complex number $z$, for which you can find a graphical representation below.
 
-  ![CP2](./CP2.png)
+![CP2](./CP2.png)
 
-  Since angles repeat themselves with a period of $k(2\pi), k \in Z$ we have that
+Since angles repeat themselves with a period of $k(2\pi), k \in Z$ we have that
 
-  $z_1 = z_2$
-
-  iff
-
-  $|z_1| = |z_2|$<br>
-  $and$<br>
-  $\theta_1 = \theta_2 + k(2\pi), k \in Z$
-
-</p>
+```math
+z_1 = z_2 \iff |z_1| = |z_2| \wedge \theta_1 = \theta_2 + k(2\pi), k \in Z
+```
 
 ## Trigonometric multiplication
 
-<p>
-  $z_1z_2 = |z_1|(\cos(\theta_1) + i\sin(\theta_1))|z_2|(\cos(\theta_2) + i\sin(\theta_2))$<br>
-  $=$<br>
-  $|z_1||z_2|(\cos(\theta_1)\cos(\theta_2) + i\cos(\theta_1)\sin(\theta_2) + i\sin(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2))$<br>
-  $=$<br>
-  $|z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) + i(\cos(\theta_1)\sin(\theta_2) + \sin(\theta_1)\cos(\theta_2)))$<br>
+```math
+  $z_1z_2 = |z_1|(\cos(\theta_1) + i\sin(\theta_1))|z_2|(\cos(\theta_2) + i\sin(\theta_2))
+```
+```math
+|z_1||z_2|(\cos(\theta_1)\cos(\theta_2) + i\cos(\theta_1)\sin(\theta_2) + i\sin(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2))
+```
+```math
+|z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) + i(\cos(\theta_1)\sin(\theta_2) + \sin(\theta_1)\cos(\theta_2)))
+```
 
-  Now we need to make a deviation into trigonometry in order to further simplify this last equation.
-
-  $-----$
+Now we need to make a deviation into trigonometry in order to further simplify this last equation.
 
 ### $\cos(\theta_1 + \theta_2) = \cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2)$
 ### $\sin(\theta_1 + \theta_2) = \sin(\theta_1)\cos(\theta_2) + \cos(\theta_1)\sin(\theta_2)$
