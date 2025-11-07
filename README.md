@@ -11,8 +11,8 @@ x = \sqrt{- n} = i\sqrt{n} = Im(\sqrt{n}) \in C
 
 where $n > 0 \in R$.
   
-Since this calculation doesn't follow $R$ field rules, another field is necessary to operate on these numbers, and guess what it's the complex field $C$. Now to avoid writing a book about fields math concepts: a field is a set of numbers, where an identity element exists, where every element (number) of the field has an inverse, and where one/two operations exist $(+, \times)$ and have some properties (if we reason using $+$ we have an additive group, otherwise we have a multiplicative group). We don't care about every single property of a field, what I want to say now is that the basic operations in $C$ behave differently compared to $R$. The interesting fact is that the equation above alone builds an entire field around itself.<br>
-Now before proceeding, I want to clarify one thing: the complex field is often associated to the $3rd$ dimension of the cartesian graph. There exist some tools [https://hemisemidemipresent.github.io/complex/] which help figuring out the three-dimensionality built by the complex field, since it often coexist with the two-dimensional cartesian graph $/R$ field in many functions/equations. Indeed the complex field "plane" share the $x-axis$ with the cartesian graph $/R$. But note that this doesn't necessarily mean that we are talking about dimensions. As humans we are dependent on visualize things graphically, but math is nothing but logic relations about quantities. If you think about the $C$ field as "another dimension" you are probably not right. Indeed $C$ **extends** $R$, and allows to operate on complex numbers, nothing more, nothing less. Math research permits to describe new logic behaviours about quantities which in turn permit to solve other problems. To conclude, don't stick too much on the dimensions, even though having a look at the above link could be useful.
+Since this calculation doesn't follow $R$ field rules, another field is necessary to operate on these numbers, and guess what it's the complex field $C$. We don't care about every single property of a field, what I want to say now is that basic operations in $C$ behave differently compared to $R$. The interesting fact is that the equation above alone builds an entire field around itself.<br>
+Now before proceeding, I want to clarify one thing: the complex field is often associated to the $3rd$ dimension of the cartesian graph. There exist some tools [https://hemisemidemipresent.github.io/complex/] which help figuring out the three-dimensionality built by the complex field, since it coexist with the two-dimensional cartesian graph $/R$ field (they share the $x - axis$). But note that this doesn't necessarily mean that we are talking about dimensions. As humans we are dependent on visualize things graphically, but math is nothing but logic relations about quantities. If you think about the $C$ field as "another dimension" you are probably not right. Indeed $C$ **extends** $R$, and allows to operate on complex numbers, nothing more, nothing less. To conclude, don't stick too much on the dimensions, even though having a look at the above link could be useful.
 
 ![C](C.png)
 
@@ -42,10 +42,10 @@ and
 When we deal with the cartesian graph, every point mapped on it can be represented using this form:
 
 ```math
-(x_{?}, y_{?})
+(x, y)
 ```
 
-We can notice that this representation is the same as $x_{?} + y_{?}$, indeed this form is called "algebraic". Now since (as already mentioned) $C$ field shares $x-axis$ with $R$, infact $C$ is an **extension** of $R$ (as shown above into the Euler-Venn graph), we can represent complex numbers as sitting on an orthogonal to $R$ plane (see the link above and play around, this is why I told you that it could be useful to visualize it). This reasoning is to "justify" the presence of a "real" part in the $C$ field. To better understand this fact, the following are the 2D (Re, and Im) **and** 3D representation of $y = \sqrt{x}$ function
+We can notice that this representation is the same as $x + y$ because it identifies a point uniquely, indeed, this form is called "algebraic". Now since (as already mentioned) $C$ field shares $x-axis$ with $R$, we can represent complex numbers as sitting on an orthogonal to $R$ plane (see the link above and play around, this is why I told you that it could be useful to visualize it). This reasoning is to "justify" the presence of a "real" part in the $C$ field (even though the real reason should be found by directly looking at the algebraic formula of an **impure** complex number $x + iy$). To better understand this fact, the following are the 2D (Re, and Im) **and** 3D representation of $y = \sqrt{x}$ function
 
 ![sqrtRe](sqrtRe.png)
 
@@ -68,10 +68,10 @@ z = (x, y) \sim x + y
 with $z, x, y \in R$, is the representation of any number on the $R-plane$ part of the cartesian graph, while
 
 ```math
-z = (x, Im(y)) = x + Im(y)
+z = (x, Im(y)) \sim x + Im(y)
 ```
 
-with $z, Im(y) \in C, x, y \in R, is the representation of any number on the $C-plane$ part of the cartesian graph.
+with $z, Im(y) \in C, x, y \in R$, is the representation of any number on the $C-plane$ part of the cartesian graph.
 
 Now we can further observe a couple of complex numbers graphical representation in a clearer representation of the $C$ plane.
 
@@ -164,13 +164,19 @@ we basically derived our trigonometric form for any complex number $z$, for whic
 Since angles repeat themselves with a period of $k(2\pi), k \in Z$ we have that
 
 ```math
-z_1 = z_2 \iff |z_1| = |z_2| \wedge \theta_1 = \theta_2 + k(2\pi), k \in Z
+z_1 = z_2 \iff |z_1| = |z_2|
+```
+```math
+\wedge
+```
+```math
+\theta_1 = \theta_2 + k(2\pi), k \in Z
 ```
 
 ## Trigonometric multiplication
 
 ```math
-  $z_1z_2 = |z_1|(\cos(\theta_1) + i\sin(\theta_1))|z_2|(\cos(\theta_2) + i\sin(\theta_2))
+z_1z_2 = |z_1|(\cos(\theta_1) + i\sin(\theta_1))|z_2|(\cos(\theta_2) + i\sin(\theta_2))
 ```
 ```math
 |z_1||z_2|(\cos(\theta_1)\cos(\theta_2) + i\cos(\theta_1)\sin(\theta_2) + i\sin(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2))
@@ -181,8 +187,14 @@ z_1 = z_2 \iff |z_1| = |z_2| \wedge \theta_1 = \theta_2 + k(2\pi), k \in Z
 
 Now we need to make a deviation into trigonometry in order to further simplify this last equation.
 
-### $\cos(\theta_1 + \theta_2) = \cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2)$
-### $\sin(\theta_1 + \theta_2) = \sin(\theta_1)\cos(\theta_2) + \cos(\theta_1)\sin(\theta_2)$
+#### Theorem
+
+```math
+\boxed{\cos(\theta_1 + \theta_2) = \cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2)}
+```
+```math
+\sin(\theta_1 + \theta_2) = \sin(\theta_1)\cos(\theta_2) + \cos(\theta_1)\sin(\theta_2)
+```
 
 #### Proof
 
@@ -192,20 +204,41 @@ Consider the following picture.
 
 We have
 
-$A\hat{O}C = \alpha$<br>
-$A\hat{O}D = \beta$<br>
-$C\hat{O}D = \alpha - \beta$
+```math
+A\hat{O}C = \alpha
+```
+```math
+A\hat{O}D = \beta
+```
+```math
+C\hat{O}D = \alpha - \beta
+```
 
 and
 
-$A = (\cos(0), \sin(0)) = (1, 0)$<br>
-$B = (\cos(\alpha - \beta), \sin(\alpha - \beta))$<br>
-$C = (\cos(\alpha), \sin(\alpha))$<br>
-$D = (\cos(\beta), \sin(\beta))$
+```math
+A = (\cos(0), \sin(0)) = (1, 0)
+```
+```math
+B = (\cos(\alpha - \beta), \sin(\alpha - \beta))
+```
+```math
+C = (\cos(\alpha), \sin(\alpha))
+```
+```math
+D = (\cos(\beta), \sin(\beta))
+```
 
 Here I want to open a little parenthesis on $A$. I specified $A = (\cos(0), \sin(0))$ because this theorem is built on $\sin$ and $\cos$ relations and the previous picture where $A$ sits on $(1, 0)$ could be misleading. This is because this theorem is not related with the length of the radius, that is, it works for any radius, hence the hypothesis of $r = 1$, doesn't really exist, that is, it just turns out that the previous picture represents the problem and $A = (\cos(0), \sin(0)) = (1, 0)$ always, and not because it is an hypothesis.
 
 Since
+
+```math
+
+```
+```math
+
+```
 
 $A\hat{O}B = C\hat{O}D = \alpha - \beta$<br>
 $->$<br>
@@ -213,11 +246,26 @@ $\overline{AB} = \overline{CD}$
 
 and
 
+```math
+
+```
+```math
+
+```
 $\overline{AB} = \sqrt{(\cos(\alpha - \beta) - 1)^{2} + (\sin(\alpha - \beta) - 0)^{2}}$<br>
 $\overline{CD} = \sqrt{(\cos(\alpha) - \cos(\beta))^{2} + (\sin(\alpha) - \sin(\beta))^{2}}$
 
 where the last two formulas are just the basic formula to compute the distance between two points in the cartesian graph (note that the order of minuend and subtrahend doesn't matter since the difference is squared). Now since $\overline{AB} = \overline{CD}$
 
+```math
+
+```
+```math
+
+```
+```math
+
+```
 $\sqrt{(\cos(\alpha - \beta) - 1)^{2} + (\sin(\alpha - \beta) - 0)^{2}} = \sqrt{(\cos(\alpha) - \cos(\beta))^{2} + (\sin(\alpha) - \sin(\beta))^{2}}$<br>
 $->$<br>
 $(\cos(\alpha - \beta) - 1)^{2} + (\sin(\alpha - \beta) - 0)^{2} = (\cos(\alpha) - \cos(\beta))^{2} + (\sin(\alpha) - \sin(\beta))^{2}$<br>
@@ -238,19 +286,40 @@ Let $ABC$ be a right triangle with hypothenuse $\overline{AB}$ and right angle $
 
 The only subtle intuition is to understand that
 
+```math
+
+```
 $\displaystyle \sin(B\hat{A}C) = \frac{\overline{BC}}{\overline{AB}}$
 
 and not just $\overline{BC}$. It could be strange at first because in general we are used to reason on a circumference of radius $1$ where $\sin(B\hat{A}C)$ would be exactly $\overline{BC}$, but the truth is that $\sin$ and $\cos$ are relations between quantities (in this case lengths), indeed $\sin(B\hat{A}C) = 1$ only if the length of the segment we identified as $\overline{BC}$ is equal to $\overline{AB}$ (which would destroy the structure of the triangle but that's not the point here, indeed $\sin(90°)$ still equals $1$ after this revelation), and when we reason having a radius which equals $1$, we have
 
+```math
+
+```
 $\displaystyle \sin(B\hat{A}C) = \frac{\overline{BC}}{1} = \overline{BC}$
 
 which clarifies why this 'theorem' could be strange at first. I used quotes because this equality strictly derives by the meaning of $\sin$ and $\cos$ functions, there are not complex formulas or steps involved. Having said so, we have
 
+```math
+
+```
+```math
+
+```
 $\displaystyle \sin(B\hat{A}C) = \frac{\overline{BC}}{\overline{AB}}$<br>
 $\displaystyle \cos(B\hat{A}C) = \frac{\overline{AC}}{\overline{AB}}$
 
 then
 
+```math
+
+```
+```math
+
+```
+```math
+
+```
 $\displaystyle \sin^2(B\hat{A}C) = \frac{\overline{BC}^2}{\overline{AB}^2}$<br>
 $\displaystyle \cos^2(B\hat{A}C) = \frac{\overline{AC}^2}{\overline{AB}^2}$<br>
 $->$<br>
@@ -258,14 +327,23 @@ $\displaystyle \sin^2(B\hat{A}C) + \cos^2(B\hat{A}C) = \frac{\overline{BC}^2}{\o
 
 and by the Pythagorean Theorem we exactly have that
 
+```math
+
+```
 $\overline{BC}^2 + \overline{AC}^2 = \overline{AB}^2$
 
 then
 
+```math
+
+```
 $\displaystyle \frac{\overline{BC}^2 + \overline{AC}^2}{\overline{AB}^2} = 1$
 
 and therefore
 
+```math
+
+```
 $\cos^{2}(\theta) + \sin^{2}(\theta) = 1$
 
 always, for any $\theta$.
@@ -274,16 +352,40 @@ $-----$
 
 Back to our previous theorem we had
 
+```math
+
+```
 $\cos^{2}(\alpha - \beta) - 2\cos(\alpha - \beta) + 1 + \sin^{2}(\alpha - \beta) = \cos^{2}(\alpha) - 2\cos(\alpha)\cos(\beta) + \cos^{2}(\beta) + \sin^{2}(\alpha) - 2\sin(\alpha)\sin(\beta) + \sin^{2}(\beta)$
 
 then by the fundamental relation of trigonometry we have
 
+```math
+
+```
+```math
+
+```
+```math
+
+```
 $\cos^{2}(\alpha - \beta) + \sin^{2}(\alpha - \beta) = 1$<br>
 $\cos^{2}(\alpha) + \sin^{2}(\alpha) = 1$<br>
 $\cos^{2}(\beta) + \sin^{2}(\beta) = 1$
 
 thus
 
+```math
+
+```
+```math
+
+```
+```math
+
+```
+```math
+
+```
 $\cos^{2}(\alpha - \beta) - 2\cos(\alpha - \beta) + 1 + \sin^{2}(\alpha - \beta) = \cos^{2}(\alpha) - 2\cos(\alpha)\cos(\beta) + \cos^{2}(\beta) + \sin^{2}(\alpha) - 2\sin(\alpha)\sin(\beta) + \sin^{2}(\beta)$<br>
 $->$<br>
 $2 - 2\cos(\alpha - \beta) = - 2\cos(\alpha)\cos(\beta) - 2\sin(\alpha)\sin(\beta) + 2$<br>
@@ -294,17 +396,35 @@ $\cos(\alpha - \beta) = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta)$
 
 Now
 
+```math
+
+```
+```math
+
+```
 $\cos(\alpha + \beta) = \cos(\alpha - (- \beta))$<br>
 $->$<br>
 $\cos(\alpha - (- \beta)) = \cos(\alpha)\cos(- \beta) + \sin(\alpha)\sin(- \beta)$
 
 Now it's quite simple to see that
 
+```math
+
+```
+```math
+
+```
 $\cos(- \beta) = \cos(\beta)$<br>
 $\sin(- \beta) = - \sin(\beta)$
 
 then
 
+```math
+
+```
+```math
+
+```
 $\cos(\alpha - (- \beta)) = \cos(\alpha)\cos(- \beta) + \sin(\alpha)\sin(- \beta)$<br>
 $->$<br>
 $\cos(\alpha + \beta) = \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)$ _
@@ -313,8 +433,29 @@ which finally proves the first theorem.
 
 Let's prove the second:
 
+```math
+
+```
 $\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)$
 
+```math
+
+```
+```math
+
+```
+```math
+
+```
+```math
+
+```
+```math
+
+```
+```math
+
+```
 $\cos(\alpha - \beta) = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta)$<br>
 $->$<br>
 $\alpha = 90° - \alpha$<br>
@@ -331,229 +472,357 @@ $-----$
 
 Now we can finally reconnect with the complex multiplication. We had
 
+```math
+
+```
 $|z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) + i(\cos(\theta_1)\sin(\theta_2) + \sin(\theta_1)\cos(\theta_2)))$<br>
 
 Since now we know that
 
+```math
+
+```
+```math
+
+```
+```math
+
+```
 $\cos(\alpha + \beta) = \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)$<br>
 $and$<br>
 $\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)$
 
+```math
+
+```
+```math
+
+```
 $z_1z_2 = |z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) + i(\cos(\theta_1)\sin(\theta_2) + \sin(\theta_1)\cos(\theta_2)))$<br>
 $=$<br>
 $|z_1||z_2|(\cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2))$
 
-</p>
-
 ## Trigonometric divison
 
-<p>
-  We recycle the previous result and state that if
+We recycle the previous result and state that if
 
-  $z = z_1 / z_2$<br>
-  $->$<br>
-  $zz_2 = z_1$
+```math
 
-  then
+```
+```math
 
-  $|z||z_2|(\cos(\theta + \theta_2) + i\sin(\theta + \theta_2)) = |z_1|(\cos(\theta_1) + i\sin(\theta_1))$<br>
-  $->$<br>
-  $\displaystyle |z| = \frac{|z_1|}{|z_2|}$<br>
-  $and$<br>
-  $\cos(\theta) + i\sin(\theta) = \cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2)$<br>
-  $->$<br>
-  $\displaystyle z = \frac{z_1}{z_2} = \frac{|z_1|}{|z_2|}(\cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2))$
+```
+$z = z_1 / z_2$<br>
+$->$<br>
+$zz_2 = z_1$
 
-</p>
+then
+
+```math
+
+```
+```math
+
+```
+```math
+
+```
+```math
+
+```
+```math
+
+```
+$|z||z_2|(\cos(\theta + \theta_2) + i\sin(\theta + \theta_2)) = |z_1|(\cos(\theta_1) + i\sin(\theta_1))$<br>
+$->$<br>
+$\displaystyle |z| = \frac{|z_1|}{|z_2|}$<br>
+$and$<br>
+$\cos(\theta) + i\sin(\theta) = \cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2)$<br>
+$->$<br>
+$\displaystyle z = \frac{z_1}{z_2} = \frac{|z_1|}{|z_2|}(\cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2))$
 
 ## Trigonometric powers
 
-<p>
-  
-  It's quite trivial now to see that
+It's quite trivial now to see that
 
-  $z^{n} = |z|^{n}(\cos(n\theta) + i\sin(n\theta))$
-  
-</p>
+```math
+
+```
+$z^{n} = |z|^{n}(\cos(n\theta) + i\sin(n\theta))$
 
 ## De Moivre formula
 
-<p>
-  When $|z| = 1$ we have De Moivre formula defined as
+When $|z| = 1$ we have De Moivre formula defined as
 
-  $z^{n} = \cos(n\theta) + i\sin(n\theta)$
-  
-</p>
+```math
+
+```
+$z^{n} = \cos(n\theta) + i\sin(n\theta)$
 
 ## From Newton $e$ constant discovery to Euler Identity
 
-<p>
-  Long time ago Newton faced the topic of derivatives and wanted to find a function whose derivative was equivalent to itself. Since polynomials gets downgraded by derivatives it couldn't be a normal polynomial, but what about an infinite polynomial which approximates the function? Now, accidentally, every function which has infinite many derivatives can be approximated towards perfection in a point $x_0$ through an infinite polynomial which is called Taylor series, which is defined as
+Long time ago Newton faced the topic of derivatives and wanted to find a function whose derivative was equivalent to itself. Since polynomials gets downgraded by derivatives it couldn't be a normal polynomial, but what about an infinite polynomial which approximates the function? Now, accidentally, every function which has infinite many derivatives can be approximated towards perfection in a point $x_0$ through an infinite polynomial which is called Taylor series, which is defined as
 
-  $\displaystyle \sum_{n = 0}^{\infty} \frac{f^{(n)}(x_0)}{n!}(x - x_0)^{n}$
+```math
 
-  where $f^{(n)}(x_0)$ represents the $nth$ derivative of $f(x)$ calculated in $x_0$. I won't derive the series from scratch since there are no ways to make it a fast process [https://math.stackexchange.com/questions/706282/how-are-the-taylor-series-derived], but we can think of the Taylor series as a polynomial which approximates $f(x)$ centered in $x_0$ better and better the more addends we consider, that is, the more derivatives we consider of the function. If we have a function which has infinite many derivatives then the Taylor series will exactly be that function. Now, if we consider the point $x_0 = 0$ (which is fine as long as our function is defined in $x = 0$) we get the same result of the previous function, fixing the center of the approximation in $x = 0$ which is fine, and obtaining 
+```
+$\displaystyle \sum_{n = 0}^{\infty} \frac{f^{(n)}(x_0)}{n!}(x - x_0)^{n}$
 
-  $\displaystyle \sum_{n = 0}^{\infty} \frac{f^{(n)}(0)}{n!}x^{n}$
+where $f^{(n)}(x_0)$ represents the $nth$ derivative of $f(x)$ calculated in $x_0$. I won't derive the series from scratch since there are no ways to make it a fast process [https://math.stackexchange.com/questions/706282/how-are-the-taylor-series-derived], but we can think of the Taylor series as a polynomial which approximates $f(x)$ centered in $x_0$ better and better the more addends we consider, that is, the more derivatives we consider of the function. If we have a function which has infinite many derivatives then the Taylor series will exactly be that function. Now, if we consider the point $x_0 = 0$ (which is fine as long as our function is defined in $x = 0$) we get the same result of the previous function, fixing the center of the approximation in $x = 0$ which is fine, and obtaining 
 
-  which is easier to calculate and it's called Maclaurin series.
+```math
 
-  Now the fun part. Since Newton wanted a function which derived was equal to itself, he literally created it using Maclaurin series. Since this function's $nth$ derivative is equal to itself (hence it will be equal for every addend) we can take it as factor outside the summation of the Maclaurin series, obtaining
+```
+$\displaystyle \sum_{n = 0}^{\infty} \frac{f^{(n)}(0)}{n!}x^{n}$
 
-  $\displaystyle f(0) \sum_{n = 0}^{\infty} \frac{1}{n!}x^{n}$<br>
-  $->$<br>
-  $\displaystyle f(0) \sum_{n = 0}^{\infty} \frac{x^{n}}{n!}$
+which is easier to calculate and it's called Maclaurin series.
 
-  At this point he had another straightforward while smart intuition. If $f(0) = 1$ we are done and we have our function, thus the answer is $f(x) = e^{x}$ for some mysterious number which we call $e$, because $e^{0} = 1$ for any $e$, then
+Now the fun part. Since Newton wanted a function which derived was equal to itself, he literally created it using Maclaurin series. Since this function's $nth$ derivative is equal to itself (hence it will be equal for every addend) we can take it as factor outside the summation of the Maclaurin series, obtaining
 
-  $\displaystyle e^{x} = \sum_{n = 0}^{\infty} \frac{x^{n}}{n!}$
+```math
 
-  and if we find the value of the function for $x = 1$ we can even compute the previous mysterious number, obtaining
+```
+```math
 
-  $\displaystyle e^{1} = e = \sum_{n = 0}^{\infty} \frac{1}{n!} = 1 + \frac{1}{2} + \frac{1}{3!} + \frac{1}{4!} + \dots$
+```
+$\displaystyle f(0) \sum_{n = 0}^{\infty} \frac{1}{n!}x^{n}$<br>
+$->$<br>
+$\displaystyle f(0) \sum_{n = 0}^{\infty} \frac{x^{n}}{n!}$
 
-  Thus now you know what $e$ really is. Now, let's expand the surface to the complex field.
+At this point he had another straightforward while smart intuition. If $f(0) = 1$ we are done and we have our function, thus the answer is $f(x) = e^{x}$ for some mysterious number which we call $e$, because $e^{0} = 1$ for any $e$, then
 
-  We define
+```math
 
-  $\displaystyle e^{z} = \sum_{n = 0}^{\infty} \frac{z^{n}}{n!}$
+```
+$\displaystyle e^{x} = \sum_{n = 0}^{\infty} \frac{x^{n}}{n!}$
 
-  simply considering $x$ in the complex field, hence as complex number called $z$. We define $z$ as a pure complex number, thus
+and if we find the value of the function for $x = 1$ we can even compute the previous mysterious number, obtaining
 
-  $z = iy$<br>
-  $->$<br>
-  $\displaystyle e^{iy} = \sum_{n = 0}^{\infty} \frac{i^{n}y^{n}}{n!}$
+```math
 
-  Since $i \cdot i = - 1$ we split the summation in half and get
+```
+$\displaystyle e^{1} = e = \sum_{n = 0}^{\infty} \frac{1}{n!} = 1 + \frac{1}{2} + \frac{1}{3!} + \frac{1}{4!} + \dots$
 
-  $\displaystyle e^{iy} = \sum_{n = 0}^{\infty} \frac{i^{n}y^{n}}{n!} = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n}}{(2n)!} + i\sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n + 1}}{(2n + 1)!}$
+Thus now you know what $e$ really is. Now, let's expand the surface to the complex field.
 
-  Take your time to digest this one since it's not simple. You'll find out it basically acts in the future :').
+We define
 
-  Now, if you apply Maclaurin to $\sin$ and $\cos$ functions, you'll find out that
+```math
 
-  $\displaystyle \sin(y) = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n + 1}}{(2n + 1)!}$<br>
-  $\displaystyle \cos(y) = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n}}{(2n)!}$
+```
+$\displaystyle e^{z} = \sum_{n = 0}^{\infty} \frac{z^{n}}{n!}$
 
-  hence
+simply considering $x$ in the complex field, hence as complex number called $z$. We define $z$ as a pure complex number, thus
 
-  $e^{iy} = \cos(y) + i\sin(y)$
+```math
 
-  and when we have $y = \pi$ we obtain
+```
+```math
 
-  $e^{i\pi} = \cos(\pi) + i\sin(\pi) = - 1 + 0 = - 1$
+```
+$z = iy$<br>
+$->$<br>
+$\displaystyle e^{iy} = \sum_{n = 0}^{\infty} \frac{i^{n}y^{n}}{n!}$
 
-  then
+Since $i \cdot i = - 1$ we split the summation in half and get
 
-  $e^{i\pi} = - 1$
+$\displaystyle e^{iy} = \sum_{n = 0}^{\infty} \frac{i^{n}y^{n}}{n!} = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n}}{(2n)!} + i\sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n + 1}}{(2n + 1)!}$
 
-  which is the Euler Identity.
+Take your time to digest this one since it's not simple. You'll find out it basically acts in the future :').
 
-  When $y = 2\pi$ we get
+Now, if you apply Maclaurin to $\sin$ and $\cos$ functions, you'll find out that
 
-  $e^{i2\pi} = \cos(2\pi) + i\sin(2\pi) = 1 + 0 = 1$
+```math
 
-  then
+```
+```math
 
-  $e^{i2\pi} = 1$
+```
+$\displaystyle \sin(y) = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n + 1}}{(2n + 1)!}$<br>
+$\displaystyle \cos(y) = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n}}{(2n)!}$
 
-  and also
+hence
 
-  $e^{ik2\pi} = 1, k \in Z$
+```math
 
-</p>
+```
+$e^{iy} = \cos(y) + i\sin(y)$
+
+and when we have $y = \pi$ we obtain
+
+```math
+
+```
+$e^{i\pi} = \cos(\pi) + i\sin(\pi) = - 1 + 0 = - 1$
+
+then
+
+```math
+
+```
+$e^{i\pi} = - 1$
+
+which is the Euler Identity.
+
+When $y = 2\pi$ we get
+
+```math
+
+```
+$e^{i2\pi} = \cos(2\pi) + i\sin(2\pi) = 1 + 0 = 1$
+
+then
+
+```math
+
+```
+$e^{i2\pi} = 1$
+
+and also
+
+```math
+
+```
+$e^{ik2\pi} = 1, k \in Z$
 
 ## $e^{z}$ analysis
 
-<p>
-  We can take the previous results and derive some basic rules in order to expand our view.
+We can take the previous results and derive some basic rules in order to expand our view.
 
-  Since we had
+Since we had
 
-  $e^{iy} = \cos(y) + i\sin(y)$
+```math
 
-  if
+```
+$e^{iy} = \cos(y) + i\sin(y)$
 
-  $z = x + iy$
+if
 
-  then
+```math
 
-  $e^{z} = e^{x}(\cos(y) + i\sin(y))$
+```
+$z = x + iy$
 
-  We can easily see that this form expand $e^{x}, x \in R$ because if
+then
 
-  $z = x + i0$
+```math
 
-  then
+```
+$e^{z} = e^{x}(\cos(y) + i\sin(y))$
 
-  $e^{z} = e^{x}(\cos(0) + i\sin(0)) = e^{x}(1 + 0) = e^{x}$
+We can easily see that this form expand $e^{x}, x \in R$ because if
 
-  As we already saw $e^{ik2\pi} = 1, k \in Z$, that is, $e^{iy}$ is periodic every $ik2\pi$, thus $z = x + iy$ will be periodic in the same way, in fact
+```math
 
-  $e^{x + iy + i2k\pi} = e^{x + i(y + 2k\pi)} = e^{x}(\cos(y + 2k\pi) + i\sin(y + 2k\pi)) = e^{x}(\cos(y) + i\sin(y))$
+```
+$z = x + i0$
 
-  Now we can see $2$ more properties, let $z_1 = x_1 + iy_1$ and $z_2 = x_2 + iy_2$, we have 
+then
 
-  - $e^{z_1 + z_2} = e^{z_1}e^{z_2}$
+```math
 
-  ![P1](./P1.png)
+```
+$e^{z} = e^{x}(\cos(0) + i\sin(0)) = e^{x}(1 + 0) = e^{x}$
+
+As we already saw $e^{ik2\pi} = 1, k \in Z$, that is, $e^{iy}$ is periodic every $ik2\pi$, thus $z = x + iy$ will be periodic in the same way, in fact
+
+```math
+
+```
+$e^{x + iy + i2k\pi} = e^{x + i(y + 2k\pi)} = e^{x}(\cos(y + 2k\pi) + i\sin(y + 2k\pi)) = e^{x}(\cos(y) + i\sin(y))$
+
+Now we can see $2$ more properties, let $z_1 = x_1 + iy_1$ and $z_2 = x_2 + iy_2$, we have 
+
+- $e^{z_1 + z_2} = e^{z_1}e^{z_2}$
+
+![P1](./P1.png)
   
-  - $e^{z^{n}} = e^{zn}$ 
+- $e^{z^{n}} = e^{zn}$ 
 
-  ![P2](./P2.png)
+![P2](./P2.png)
 
-  For completeness purposes, we can see that a complex number $z$ can be also expressed using the form below
+For completeness purposes, we can see that a complex number $z$ can be also expressed using the form below
 
-  $z = |z|(\cos(\theta) + i\sin(\theta)) = |z|e^{i\theta}$ 
+```math
 
-</p>
+```
+$z = |z|(\cos(\theta) + i\sin(\theta)) = |z|e^{i\theta}$
 
 ## Roots in the complex field
 
-<p>
-  We are finally coming to what matters. The $nth$ roots of a complex number $\omega$ such that
+We are finally coming to what matters. The $nth$ roots of a complex number $\omega$ such that
 
-  $z^{n} = \omega$
+```math
 
-  are the solutions $z \in C$ which satisfy the equation. Let both $\neq 0$ then
+```
+$z^{n} = \omega$
 
-  $z = |z|(\cos(\theta_1) + i\sin(\theta_1))$<br>
-  $\omega = |\omega|(\cos(\theta_2) + i\sin(\theta_2))$
+are the solutions $z \in C$ which satisfy the equation. Let both $\neq 0$ then
 
-  We necessarily have
+```math
 
-  $\omega = |z|^{n}(\cos(n(\theta_1 + 2k\pi)) + i\sin(n(\theta_1 + 2k\pi)))$<br>
-  $->$<br>
-  - $|z| = \sqrt[n]{|\omega|}$
-  - $\displaystyle \theta_1 = \frac{\theta_2 + 2k\pi}{n}$
+```
+$z = |z|(\cos(\theta_1) + i\sin(\theta_1))$<br>
+```math
 
-  Here lies a quite magical step. We can see that
+```
+$\omega = |\omega|(\cos(\theta_2) + i\sin(\theta_2))$
 
-  $\displaystyle \frac{\theta_2 + 2k\pi}{n}$
+We necessarily have
 
-  is a solution for any $0 \leq k$ integer (negative part will be the same so, let's simplify if we can). But now, we see that until
+```math
 
-  $k = n - 1$
+```
+$\omega = |z|^{n}(\cos(n(\theta_1 + 2k\pi)) + i\sin(n(\theta_1 + 2k\pi)))$<br>
+$->$<br>
+- $|z| = \sqrt[n]{|\omega|}$
+- $\displaystyle \theta_1 = \frac{\theta_2 + 2k\pi}{n}$
 
-  our solutions are different, that is, the angles are different (and after that, i.e. $k = n$ they will start repeating themselves). Indeed
+Here lies a quite magical step. We can see that
 
-  $\displaystyle \frac{\theta_2 + 2k\pi}{n} = \frac{\theta_2}{n} + \frac{2k\pi}{n}$
+```math
 
-  and letting $k = n$
+```
+$\displaystyle \frac{\theta_2 + 2k\pi}{n}$
 
-  $\displaystyle \frac{\theta_2}{n} + \frac{2k\pi}{n} = \frac{\theta_2}{n} + 2\pi = \frac{\theta_2}{n}$
+is a solution for any $0 \leq k$ integer (negative part will be the same so, let's simplify if we can). But now, we see that until
 
-  which is the same solution we would get having $k = 0$.
+```math
 
-  This whole reasoning means that we will have $n$ distinct solutions for
+```
+$k = n - 1$
 
-  $k = \\{0, 1, \dots, n - 1\\}$
+our solutions are different, that is, the angles are different (and after that, i.e. $k = n$ they will start repeating themselves). Indeed
 
-  Since these solutions will only regard the angles, they will draw a regular polygon around $0$ in the cartesian graph.
+```math
 
-  ![R](./R.png)
+```
+$\displaystyle \frac{\theta_2 + 2k\pi}{n} = \frac{\theta_2}{n} + \frac{2k\pi}{n}$
+
+and letting $k = n$
+
+```math
+
+```
+$\displaystyle \frac{\theta_2}{n} + \frac{2k\pi}{n} = \frac{\theta_2}{n} + 2\pi = \frac{\theta_2}{n}$
+
+which is the same solution we would get having $k = 0$.
+
+This whole reasoning means that we will have $n$ distinct solutions for
+
+```math
+
+```
+$k = \\{0, 1, \dots, n - 1\\}$
+
+Since these solutions will only regard the angles, they will draw a regular polygon around $0$ in the cartesian graph.
+
+```math
+
+```
+![R](./R.png)
   
-  In the picture, $\displaystyle \alpha = \frac{\theta_2}{n}$ and $\displaystyle \beta = \frac{2k\pi}{n}$
+In the picture, $\displaystyle \alpha = \frac{\theta_2}{n}$ and $\displaystyle \beta = \frac{2k\pi}{n}$
   
 </p>
 
