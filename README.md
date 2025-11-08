@@ -287,7 +287,7 @@ and not just $\overline{BC}$. It could be strange at first because in general we
 \displaystyle \sin(B\hat{A}C) = \frac{\overline{BC}}{1} = \overline{BC}
 ```
 
-which clarifies why this 'theorem' could be strange at first. I used quotes because this equality strictly derives by the meaning of $\sin$ and $\cos$ functions, there are not complex formulas or steps involved. Having said so, we have
+which clarifies why this theorem could be strange at first. We have
 
 ```math
 \displaystyle \sin(B\hat{A}C) = \frac{\overline{BC}}{\overline{AB}}
