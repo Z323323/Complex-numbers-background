@@ -396,13 +396,25 @@ Let's prove the second one $(\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \c
 \cos(\alpha - \beta) = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta)
 ```
 ```math
+-
+```
+```math
 \alpha = 90° - \alpha
+```
+```math
+-
 ```
 ```math
 \cos((90° - \alpha) - \beta) = \cos(90° - \alpha)\cos(\beta) + \sin(90° - \alpha)\sin(\beta)
 ```
 ```math
-\sin(\alpha + \beta) = \cos(90° - \alpha - \beta) = \cos(90° - (\alpha + \beta)) = \sin(\alpha + \beta)
+-
+```
+```math
+\cos((90° - \alpha) - \beta) = \cos(90° - \alpha - \beta) = \cos(90° - (\alpha + \beta)) = \sin(\alpha + \beta)
+```
+```math
+-
 ```
 ```math
 \sin(\alpha + \beta) = \cos(90° - \alpha)\cos(\beta) + \sin(90° - \alpha)\sin(\beta)
