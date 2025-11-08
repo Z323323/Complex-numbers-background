@@ -390,11 +390,8 @@ then
 
 which finally proves the first formula of the theorem.
 
-Let's prove the second one.
+Let's prove the second one $(\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta))$.
 
-```math
-\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)
-```
 ```math
 \cos(\alpha - \beta) = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta)
 ```
