@@ -458,39 +458,29 @@ z_1z_2 = |z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) 
 We recycle the previous result and state that if
 
 ```math
-
+z = z_1 / z_2$<br>
 ```
 ```math
-
+zz_2 = z_1$
 ```
-$z = z_1 / z_2$<br>
-$->$<br>
-$zz_2 = z_1$
 
 then
 
 ```math
-
+|z||z_2|(\cos(\theta + \theta_2) + i\sin(\theta + \theta_2)) = |z_1|(\cos(\theta_1) + i\sin(\theta_1))
 ```
 ```math
-
+\displaystyle |z| = \frac{|z_1|}{|z_2|}
 ```
 ```math
-
+and
 ```
 ```math
-
+\cos(\theta) + i\sin(\theta) = \cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2)
 ```
 ```math
-
+\displaystyle z = \frac{z_1}{z_2} = \frac{|z_1|}{|z_2|}(\cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2))
 ```
-$|z||z_2|(\cos(\theta + \theta_2) + i\sin(\theta + \theta_2)) = |z_1|(\cos(\theta_1) + i\sin(\theta_1))$<br>
-$->$<br>
-$\displaystyle |z| = \frac{|z_1|}{|z_2|}$<br>
-$and$<br>
-$\cos(\theta) + i\sin(\theta) = \cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2)$<br>
-$->$<br>
-$\displaystyle z = \frac{z_1}{z_2} = \frac{|z_1|}{|z_2|}(\cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2))$
 
 ## Trigonometric powers
 
