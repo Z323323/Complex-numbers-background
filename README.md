@@ -396,31 +396,34 @@ Let's prove the second one $(\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \c
 \cos(\alpha - \beta) = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta)
 ```
 ```math
----
+--
 ```
 ```math
 \alpha = 90° - \alpha
 ```
 ```math
----
+--
 ```
 ```math
 \cos((90° - \alpha) - \beta) = \cos(90° - \alpha)\cos(\beta) + \sin(90° - \alpha)\sin(\beta)
 ```
 ```math
----
+--
 ```
 ```math
 \cos((90° - \alpha) - \beta) = \cos(90° - \alpha - \beta) = \cos(90° - (\alpha + \beta)) = \sin(\alpha + \beta)
 ```
 ```math
----
+--
 ```
 ```math
 \sin(\alpha + \beta) = \cos(90° - \alpha)\cos(\beta) + \sin(90° - \alpha)\sin(\beta)
 ```
 ```math
-\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta) \square
+\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)
+```
+```math
+\square
 ```
 
 Now we can finally reconnect with the complex multiplication. We had
@@ -440,7 +443,9 @@ and
 ```math
 \sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)
 ```
-
+```math
+then
+```
 ```math
 z_1z_2 = |z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) + i(\cos(\theta_1)\sin(\theta_2) + \sin(\theta_1)\cos(\theta_2)))
 ```
