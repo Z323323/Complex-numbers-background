@@ -388,7 +388,7 @@ then
 \cos(\alpha + \beta) = \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)
 ```
 
-which finally proves the first theorem $\square$.
+which finally proves the first formula of the theorem.
 
 Let's prove the second one.
 
