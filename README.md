@@ -458,10 +458,10 @@ z_1z_2 = |z_1||z_2|(\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) 
 We recycle the previous result and state that if
 
 ```math
-z = z_1 / z_2$<br>
+z = z_1 / z_2
 ```
 ```math
-zz_2 = z_1$
+zz_2 = z_1
 ```
 
 then
@@ -476,6 +476,9 @@ then
 and
 ```
 ```math
+\cos(\theta + \theta_2) + i\sin(\theta + \theta_2) = \cos(\theta_1) + i\sin(\theta_1)
+```
+```math
 \cos(\theta) + i\sin(\theta) = \cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2)
 ```
 ```math
@@ -487,144 +490,125 @@ and
 It's quite trivial now to see that
 
 ```math
-
+z^{n} = |z|^{n}(\cos(n\theta) + i\sin(n\theta))
 ```
-$z^{n} = |z|^{n}(\cos(n\theta) + i\sin(n\theta))$
 
 ## De Moivre formula
 
 When $|z| = 1$ we have De Moivre formula defined as
 
 ```math
-
+z^{n} = \cos(n\theta) + i\sin(n\theta)
 ```
-$z^{n} = \cos(n\theta) + i\sin(n\theta)$
 
 ## From Newton $e$ constant discovery to Euler Identity
 
 Long time ago Newton faced the topic of derivatives and wanted to find a function whose derivative was equivalent to itself. Since polynomials gets downgraded by derivatives it couldn't be a normal polynomial, but what about an infinite polynomial which approximates the function? Now, accidentally, every function which has infinite many derivatives can be approximated towards perfection in a point $x_0$ through an infinite polynomial which is called Taylor series, which is defined as
 
 ```math
-
+\displaystyle \sum_{n = 0}^{\infty} \frac{f^{(n)}(x_0)}{n!}(x - x_0)^{n}
 ```
-$\displaystyle \sum_{n = 0}^{\infty} \frac{f^{(n)}(x_0)}{n!}(x - x_0)^{n}$
 
 where $f^{(n)}(x_0)$ represents the $nth$ derivative of $f(x)$ calculated in $x_0$. I won't derive the series from scratch since there are no ways to make it a fast process [https://math.stackexchange.com/questions/706282/how-are-the-taylor-series-derived], but we can think of the Taylor series as a polynomial which approximates $f(x)$ centered in $x_0$ better and better the more addends we consider, that is, the more derivatives we consider of the function. If we have a function which has infinite many derivatives then the Taylor series will exactly be that function. Now, if we consider the point $x_0 = 0$ (which is fine as long as our function is defined in $x = 0$) we get the same result of the previous function, fixing the center of the approximation in $x = 0$ which is fine, and obtaining 
 
 ```math
-
+\displaystyle \sum_{n = 0}^{\infty} \frac{f^{(n)}(0)}{n!}x^{n}
 ```
-$\displaystyle \sum_{n = 0}^{\infty} \frac{f^{(n)}(0)}{n!}x^{n}$
 
 which is easier to calculate and it's called Maclaurin series.
 
 Now the fun part. Since Newton wanted a function which derived was equal to itself, he literally created it using Maclaurin series. Since this function's $nth$ derivative is equal to itself (hence it will be equal for every addend) we can take it as factor outside the summation of the Maclaurin series, obtaining
 
 ```math
-
+\displaystyle f(0) \sum_{n = 0}^{\infty} \frac{1}{n!}x^{n}
 ```
 ```math
-
+\displaystyle f(0) \sum_{n = 0}^{\infty} \frac{x^{n}}{n!}
 ```
-$\displaystyle f(0) \sum_{n = 0}^{\infty} \frac{1}{n!}x^{n}$<br>
-$->$<br>
-$\displaystyle f(0) \sum_{n = 0}^{\infty} \frac{x^{n}}{n!}$
 
 At this point he had another straightforward while smart intuition. If $f(0) = 1$ we are done and we have our function, thus the answer is $f(x) = e^{x}$ for some mysterious number which we call $e$, because $e^{0} = 1$ for any $e$, then
 
 ```math
-
+\displaystyle e^{x} = \sum_{n = 0}^{\infty} \frac{x^{n}}{n!}
 ```
-$\displaystyle e^{x} = \sum_{n = 0}^{\infty} \frac{x^{n}}{n!}$
 
 and if we find the value of the function for $x = 1$ we can even compute the previous mysterious number, obtaining
 
 ```math
-
+\displaystyle e^{1} = e = \sum_{n = 0}^{\infty} \frac{1}{n!} = 1 + \frac{1}{2} + \frac{1}{3!} + \frac{1}{4!} + \dots
 ```
-$\displaystyle e^{1} = e = \sum_{n = 0}^{\infty} \frac{1}{n!} = 1 + \frac{1}{2} + \frac{1}{3!} + \frac{1}{4!} + \dots$
 
 Thus now you know what $e$ really is. Now, let's expand the surface to the complex field.
 
 We define
 
 ```math
-
+\displaystyle e^{z} = \sum_{n = 0}^{\infty} \frac{z^{n}}{n!}
 ```
-$\displaystyle e^{z} = \sum_{n = 0}^{\infty} \frac{z^{n}}{n!}$
 
 simply considering $x$ in the complex field, hence as complex number called $z$. We define $z$ as a pure complex number, thus
 
 ```math
-
+z = iy
 ```
 ```math
-
+\displaystyle e^{iy} = \sum_{n = 0}^{\infty} \frac{i^{n}y^{n}}{n!}
 ```
-$z = iy$<br>
-$->$<br>
-$\displaystyle e^{iy} = \sum_{n = 0}^{\infty} \frac{i^{n}y^{n}}{n!}$
 
 Since $i \cdot i = - 1$ we split the summation in half and get
 
-$\displaystyle e^{iy} = \sum_{n = 0}^{\infty} \frac{i^{n}y^{n}}{n!} = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n}}{(2n)!} + i\sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n + 1}}{(2n + 1)!}$
+```math
+\displaystyle e^{iy} = \sum_{n = 0}^{\infty} \frac{i^{n}y^{n}}{n!} = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n}}{(2n)!} + i\sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n + 1}}{(2n + 1)!}
+```
 
-Take your time to digest this one since it's not simple. You'll find out it basically acts in the future :').
+Take your time to digest this one since it's not simple. You'll find out it basically acts in the future.
 
 Now, if you apply Maclaurin to $\sin$ and $\cos$ functions, you'll find out that
 
 ```math
-
+\displaystyle \sin(y) = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n + 1}}{(2n + 1)!}
 ```
 ```math
-
+\displaystyle \cos(y) = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n}}{(2n)!}
 ```
-$\displaystyle \sin(y) = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n + 1}}{(2n + 1)!}$<br>
-$\displaystyle \cos(y) = \sum_{n = 0}^{\infty} (- 1)^{n}\frac{y^{2n}}{(2n)!}$
 
 hence
 
 ```math
-
+e^{iy} = \cos(y) + i\sin(y)
 ```
-$e^{iy} = \cos(y) + i\sin(y)$
 
 and when we have $y = \pi$ we obtain
 
 ```math
-
+e^{i\pi} = \cos(\pi) + i\sin(\pi) = - 1 + 0 = - 1
 ```
-$e^{i\pi} = \cos(\pi) + i\sin(\pi) = - 1 + 0 = - 1$
 
 then
 
 ```math
-
+e^{i\pi} = - 1
 ```
-$e^{i\pi} = - 1$
 
 which is the Euler Identity.
 
 When $y = 2\pi$ we get
 
 ```math
-
+e^{i2\pi} = \cos(2\pi) + i\sin(2\pi) = 1 + 0 = 1
 ```
-$e^{i2\pi} = \cos(2\pi) + i\sin(2\pi) = 1 + 0 = 1$
 
 then
 
 ```math
-
+e^{i2\pi} = 1
 ```
-$e^{i2\pi} = 1$
 
 and also
 
 ```math
-
+e^{ik2\pi} = 1, k \in Z
 ```
-$e^{ik2\pi} = 1, k \in Z$
 
 ## $e^{z}$ analysis
 
@@ -633,37 +617,32 @@ We can take the previous results and derive some basic rules in order to expand 
 Since we had
 
 ```math
-
+e^{iy} = \cos(y) + i\sin(y)
 ```
-$e^{iy} = \cos(y) + i\sin(y)$
 
 if
 
 ```math
-
+z = x + iy
 ```
-$z = x + iy$
 
 then
 
 ```math
-
+e^{z} = e^{x}(\cos(y) + i\sin(y))
 ```
-$e^{z} = e^{x}(\cos(y) + i\sin(y))$
 
 We can easily see that this form expand $e^{x}, x \in R$ because if
 
 ```math
-
+z = x + i0
 ```
-$z = x + i0$
 
 then
 
 ```math
-
+e^{z} = e^{x}(\cos(0) + i\sin(0)) = e^{x}(1 + 0) = e^{x}
 ```
-$e^{z} = e^{x}(\cos(0) + i\sin(0)) = e^{x}(1 + 0) = e^{x}$
 
 As we already saw $e^{ik2\pi} = 1, k \in Z$, that is, $e^{iy}$ is periodic every $ik2\pi$, thus $z = x + iy$ will be periodic in the same way, in fact
 
