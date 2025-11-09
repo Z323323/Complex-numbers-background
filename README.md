@@ -479,6 +479,9 @@ and
 \cos(\theta + \theta_2) + i\sin(\theta + \theta_2) = \cos(\theta_1) + i\sin(\theta_1)
 ```
 ```math
+\cos(\theta + \theta_2 - \theta_2) + i\sin(\theta + \theta_2 - \theta_2) = \cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2)
+```
+```math
 \cos(\theta) + i\sin(\theta) = \cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2)
 ```
 ```math
@@ -647,9 +650,8 @@ e^{z} = e^{x}(\cos(0) + i\sin(0)) = e^{x}(1 + 0) = e^{x}
 As we already saw $e^{ik2\pi} = 1, k \in Z$, that is, $e^{iy}$ is periodic every $ik2\pi$, thus $z = x + iy$ will be periodic in the same way, in fact
 
 ```math
-
+e^{x + iy + i2k\pi} = e^{x + i(y + 2k\pi)} = e^{x}(\cos(y + 2k\pi) + i\sin(y + 2k\pi)) = e^{x}(\cos(y) + i\sin(y))
 ```
-$e^{x + iy + i2k\pi} = e^{x + i(y + 2k\pi)} = e^{x}(\cos(y + 2k\pi) + i\sin(y + 2k\pi)) = e^{x}(\cos(y) + i\sin(y))$
 
 Now we can see $2$ more properties, let $z_1 = x_1 + iy_1$ and $z_2 = x_2 + iy_2$, we have 
 
@@ -664,82 +666,69 @@ Now we can see $2$ more properties, let $z_1 = x_1 + iy_1$ and $z_2 = x_2 + iy_2
 For completeness purposes, we can see that a complex number $z$ can be also expressed using the form below
 
 ```math
-
+z = |z|(\cos(\theta) + i\sin(\theta)) = |z|e^{i\theta}
 ```
-$z = |z|(\cos(\theta) + i\sin(\theta)) = |z|e^{i\theta}$
 
 ## Roots in the complex field
 
 We are finally coming to what matters. The $nth$ roots of a complex number $\omega$ such that
 
 ```math
-
+z^{n} = \omega
 ```
-$z^{n} = \omega$
 
 are the solutions $z \in C$ which satisfy the equation. Let both $\neq 0$ then
 
 ```math
-
+z = |z|(\cos(\theta_1) + i\sin(\theta_1))
 ```
-$z = |z|(\cos(\theta_1) + i\sin(\theta_1))$<br>
 ```math
-
+\omega = |\omega|(\cos(\theta_2) + i\sin(\theta_2))
 ```
-$\omega = |\omega|(\cos(\theta_2) + i\sin(\theta_2))$
 
 We necessarily have
 
 ```math
-
+\omega = |z|^{n}(\cos(n(\theta_1 + 2k\pi)) + i\sin(n(\theta_1 + 2k\pi)))
 ```
-$\omega = |z|^{n}(\cos(n(\theta_1 + 2k\pi)) + i\sin(n(\theta_1 + 2k\pi)))$<br>
-$->$<br>
+
 - $|z| = \sqrt[n]{|\omega|}$
 - $\displaystyle \theta_1 = \frac{\theta_2 + 2k\pi}{n}$
 
 Here lies a quite magical step. We can see that
 
 ```math
-
+\displaystyle \frac{\theta_2 + 2k\pi}{n}
 ```
-$\displaystyle \frac{\theta_2 + 2k\pi}{n}$
 
 is a solution for any $0 \leq k$ integer (negative part will be the same so, let's simplify if we can). But now, we see that until
 
 ```math
-
+k = n - 1
 ```
-$k = n - 1$
 
 our solutions are different, that is, the angles are different (and after that, i.e. $k = n$ they will start repeating themselves). Indeed
 
 ```math
-
+\displaystyle \frac{\theta_2 + 2k\pi}{n} = \frac{\theta_2}{n} + \frac{2k\pi}{n}
 ```
-$\displaystyle \frac{\theta_2 + 2k\pi}{n} = \frac{\theta_2}{n} + \frac{2k\pi}{n}$
 
 and letting $k = n$
 
 ```math
-
+\displaystyle \frac{\theta_2}{n} + \frac{2k\pi}{n} = \frac{\theta_2}{n} + 2\pi = \frac{\theta_2}{n}
 ```
-$\displaystyle \frac{\theta_2}{n} + \frac{2k\pi}{n} = \frac{\theta_2}{n} + 2\pi = \frac{\theta_2}{n}$
 
 which is the same solution we would get having $k = 0$.
 
 This whole reasoning means that we will have $n$ distinct solutions for
 
 ```math
-
+k = \\{0, 1, \dots, n - 1\\}
 ```
-$k = \\{0, 1, \dots, n - 1\\}$
 
 Since these solutions will only regard the angles, they will draw a regular polygon around $0$ in the cartesian graph.
 
-```math
-
-```
 ![R](./R.png)
   
 In the picture, $\displaystyle \alpha = \frac{\theta_2}{n}$ and $\displaystyle \beta = \frac{2k\pi}{n}$
