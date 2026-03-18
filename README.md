@@ -538,7 +538,7 @@ At this point he had another straightforward while smart intuition. If $f(0) = 1
 and if we find the value of the function for $x = 1$ we can even compute the previous mysterious number, obtaining
 
 ```math
-\displaystyle e^{1} = e = \sum_{n = 0}^{\infty} \frac{1}{n!} = 1 + \frac{1}{2} + \frac{1}{3!} + \frac{1}{4!} + \dots
+\displaystyle e^{1} = e = \sum_{n = 0}^{\infty} \frac{1}{n!} = \frac{1}{0!} + \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + \frac{1}{4!} + \dots = 1 + 1 + \frac{1}{2} + \frac{1}{3!} + \frac{1}{4!} + \dots
 ```
 
 Thus now you know what $e$ really is. Now, let's expand the surface to the complex field.
