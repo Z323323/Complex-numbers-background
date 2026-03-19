@@ -14,7 +14,9 @@ where $n > 0 \in R$.
 Since this calculation doesn't follow $R$ field rules, another field is necessary to operate on these numbers, and guess what it's the complex field $C$. We don't care about every single property of a field, what I want to say now is that basic operations in $C$ behave differently compared to $R$. The interesting fact is that the equation above alone builds an entire field around itself.<br>
 Now, before we proceed, I want to clarify one thing: the complex field is often associated to the $3rd$ dimension of the cartesian graph. There exist some tools [https://hemisemidemipresent.github.io/complex/] which help figuring out the three-dimensionality built by the complex field, since it coexist with the two-dimensional cartesian graph $/R$ field (they share the $x - axis$). But note that this doesn't necessarily mean that we are talking about dimensions. As humans we are dependent on visualize things graphically, but math is nothing but logic relations about quantities. If you think about the $C$ field as "another dimension" you are probably not right. Indeed $C$ **extends** $R$, and allows to operate on complex numbers, nothing more, nothing less. To conclude, don't stick too much on the dimensions, even though having a look at the above link could be useful.
 
-![C](C.png)
+<p align="center">
+  <img src ="C.png">
+</p>
 
 ## Representation and multiplication of numbers in $C$
 
@@ -47,17 +49,23 @@ When we deal with the cartesian graph, every point mapped on it can be represent
 
 We can notice that this representation is the same as $x + y$ because it identifies a point uniquely, indeed, this form is called "algebraic". Now since (as already mentioned) $C$ field shares $x-axis$ with $R$, we can represent complex numbers as sitting on an orthogonal to $R$ plane (see the link above and play around, this is why I told you that it could be useful to visualize it). This reasoning is to "justify" the presence of a "real" part in the $C$ field (even though the real reason should be found by directly looking at the algebraic formula of an **impure** complex number $x + iy$). To better understand this fact, the following are the 2D (Re, and Im) **and** 3D representation of $y = \sqrt{x}$ function
 
-![sqrtRe](sqrtRe.png)
+<p align="center">
+  <img src ="sqrtRe.png">
+</p>
 
 which as you can see is not defined when $n < 0$ since $\sqrt{n} \notin R$ for $n$ negative, while
 
-![sqrtIm](sqrtIm.png)
+<p align="center">
+  <img src ="sqrtIm.png">
+</p>
 
 is exactly the same function but it is defined in $C$, indeed $n < 0, \sqrt{n} = i\sqrt{n} \in C$.<br>
 Now let's see the 3D representation, always noting that these results are somehow biased from the obvious complexity of such 
 software and the forced $3rd-person$ POV.
 
-![sqrt3D](sqrt3D.png)
+<p align="center">
+  <img src ="sqrt3D.png">
+</p>
 
 Now, since we know why the $x-axis$ is shared between $R$ and $C$, and we can represent any number in an "algebraic" form, then
 
@@ -82,7 +90,9 @@ z_1 = 1 + Im(1)
 z_2 = - 3 - Im(2)
 ```
 
-![CP](./CP.png)
+<p align="center">
+  <img src ="CP.png">
+</p>
 
 Now we can finally see the multiplication.
 
@@ -159,7 +169,9 @@ z = |z|(\cos(\theta) + i\sin(\theta))
 
 we basically derived our trigonometric form for any complex number $z$, for which you can find a graphical representation below.
 
-![CP2](./CP2.png)
+<p align="center">
+  <img src ="CP2.png">
+</p>
 
 Since angles repeat themselves with a period of $k(2\pi), k \in Z$ we have that
 
@@ -200,7 +212,9 @@ Now we need to make a deviation into trigonometry in order to further simplify t
 
 Consider the following picture.
 
-![TR](./TR.png)
+<p align="center">
+  <img src ="TR.png">
+</p>
 
 We have
 
@@ -273,7 +287,9 @@ Now we need to further analyze the fundamental relation of trigonometry.
 
 Let $ABC$ be a right triangle with hypothenuse $\overline{AB}$ and right angle $A\hat{C}B$.
 
-![ABC](./ABC.jpg)
+<p align="center">
+  <img src ="ABC.jpg">
+</p>
 
 The only subtle intuition is to understand that
 
@@ -657,11 +673,15 @@ Now we can see $2$ more properties, let $z_1 = x_1 + iy_1$ and $z_2 = x_2 + iy_2
 
 - $e^{z_1 + z_2} = e^{z_1}e^{z_2}$
 
-![P1](./P1.png)
+<p align="center">
+  <img src ="P1.png">
+</p>
   
 - $e^{z^{n}} = e^{zn}$ 
 
-![P2](./P2.png)
+<p align="center">
+  <img src ="P2.png">
+</p>
 
 For completeness purposes, we can see that a complex number $z$ can be also expressed using the form below
 
@@ -729,7 +749,9 @@ k = \\{0, 1, \dots, n - 1\\}
 
 Since these solutions will only regard the angles, they will draw a regular polygon around $0$ in the cartesian graph.
 
-![R](./R.png)
+<p align="center">
+  <img src ="R.png">
+</p>
   
 In the picture, $\displaystyle \alpha = \frac{\theta_2}{n}$ and $\displaystyle \beta = \frac{2k\pi}{n}$
   
