@@ -753,7 +753,7 @@ Since these solutions will only regard the angles, they will draw a regular poly
   <img src ="R.png">
 </p>
   
-In the picture, $\displaystyle \alpha = \frac{\theta_2}{n}$ and $\displaystyle \beta = \frac{2k\pi}{n}$
+In the picture, $\alpha = \frac{\theta_2}{n}$ and $\beta = \frac{2k\pi}{n}$.
   
 </p>
 
