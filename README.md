@@ -1,4 +1,4 @@
-# Trigonometric multiplication
+# Multiplication of complex numbers in trigonometric form proof
 
 ```math
 z_1z_2 = |z_1|(\cos(\theta_1) + i\sin(\theta_1))|z_2|(\cos(\theta_2) + i\sin(\theta_2))
